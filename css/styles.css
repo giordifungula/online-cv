@@ -9,18 +9,69 @@ body {
 }
 .slantedDivA {
     background: linear-gradient(to left, rgb(179, 73, 73) , rgba(173, 173, 34, 0.8));
-    height: 500px;
+    height: 100vh;
+    width: 100%;
+    /* background-size: cover; */
+    background-image: url(images/BG_1.jpg);
+    background: url('/imgaes/BG_1.png');
+    background-position: center;
     /* position: relative; */
     
 }
 .details {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    height: 30%;
-    width: 50%;
-    margin: -15% 0 2% -25%;
+    height: 200px;
+}
+.center {
+    position: relative;
+    top:50%;
+    /* background: #a88e8a; */
+    transform: translateY(-50%);
+    text-align: center;
 }
 .about {
     margin: 1%;
+}
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding: 10px 100px;
+    transition: 2s;
+}
+nav.logo{
+    padding: 22px 20px;
+    height: 80px;
+    float: left;
+    font-size: 24px;
+    transition: .3s;
+}
+nav a {
+    /* list-style: none; */
+    /* float: right; */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    line-height: 30px;
+    color:#1515;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    word-spacing: 50px;
+}
+nav a:focus{
+    outline: none;
+}
+nav a:active {
+    background: #a88e8a;
+    color: #fff;
+    border-radius: 6px;
+}
+p h2 h3 {
+    width: 900px;
+    margin: 30px auto;
+    text-align: justify;
+    font-size: 20px;
+
 }
