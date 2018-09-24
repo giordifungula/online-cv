@@ -94,6 +94,27 @@ nav ul li{
     left: 50%;
     transform: translate(-50%, -50%);
     /* center Content in middle */
+    font-size: 40px;
+}
+.center-content h1 {
+    animation-name: fadeIn;
+    animation-duration: 4s;
+}
+@keyframes fadeIn{
+    0% {
+        opacity: 0;
+        color: #eee;
+    }
+    50% {
+        opacity: 0.5;
+        transform: translate(-150%);
+        color:#fff;
+    }
+    100% {
+        opacity: 1;
+        transition: ease-out;
+        color:#fff;
+    }
 }
 
 /* ##############  Media Quries ############# */
