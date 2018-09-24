@@ -4,89 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Website</title>
     <link rel="stylesheet" href="css/styles.css">
+    <title>Document</title>
 </head>
 <body>
     <div class="container">
-        <div class="slantedDivA">
-            <header>
-                <div class="details">
-                    <div class="center">
-                        <h1>Giordi Fungula</h1>
-                        <h3>Web Developer CV</h3>
-                    </div>
-                    <!-- <i><a href="">Scroll</a></i> -->
-                </div>
-
-                <!-- nav bar items -->
-                <nav>
-                    <div class="logo">
-                        logo
-                    </div>
-                    <a href="">Home</a>
-                    <a href="">About</a>
-                    <a href="">Work</a>
-                    <a href="">Contact</a>
-                </nav>
-            </header>
+        <header>
+            <div class="logo">
+                <!-- Logo goes here -->
+                <img src="" alt="">
+            </div>
+            <nav class="top-nav" id="myTopNav">
+                <ul>
+                    <a href="javascript:void(0)" class="closebtn" id="myCloseNav" onclick="closeNav()">&times;</a> 
+                    <!-- close nav for responsive -->
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <!-- <h2>Animated Sidenav Example</h2>
+            <p>Click on the element below to open the side navigation menu.</p> -->
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        </header>
+        <div class="container backGround">
+            <div class="center-content">
+                <h1>Giordi Fungula</h1>
+                <p>Web Devloper</p>
+            </div>
         </div>
-        <section class="about">
-             <!-- stores the about section items -->
-            <h2 class="head">About</h2>
-            <div class="aboutItem">
-               <h3>Personal</h3>
-               <p>This is my personal te xts is my personal texts is my per sonal text</p>
-               <img src="https://cdn.dribbble.com/users/959389/screenshots/2788178/lion.png" alt="">
-            </div>
-            <div class="aboutItem">
-                <h3>Education</h3>
-                <p>This is my personal te xts is my personal texts is my per sonal text</p>
-                <img src="https://cdn.dribbble.com/users/959389/screenshots/2788178/lion.png" alt="">
-                 </div>
-            <div class="aboutItem">
-               <h3>Projects</h3>
-               <p>This is my personal te xts is my personal texts is my per sonal text</p>
-               <img src="https://cdn.dribbble.com/users/959389/screenshots/2788178/lion.png" alt="">
-            </div>
-        </section>
-        <section class="work">
-            <h2 class="head">About</h2>
-            <div class="workItem">
-                <figure>
-                    <img src="https://cdn.dribbble.com/users/959389/screenshots/2788178/lion.png" alt="1">
-                    <figcaption>Work</figcaption>
-                </figure>
-            </div>
-            <div class="workItem">
-                <figure>
-                    <img src="https://cdn.dribbble.com/users/959389/screenshots/2788178/lion.png" alt="1">
-                    <figcaption>Work</figcaption>
-                </figure>
-            </div>
-            <div class="workItem">
-                <figure>
-                    <img src="https://cdn.dribbble.com/users/959389/screenshots/2788178/lion.png" alt="1">
-                    <figcaption>Work</figcaption>
-                </figure>
-            </div>
-            <div class="workItem">
-                <figure>
-                    <img src="https://cdn.dribbble.com/users/959389/screenshots/2788178/lion.png" alt="1">
-                    <figcaption>Work</figcaption>
-                </figure>
-            </div>
-            <div class="workItem">
-                <figure>
-                    <img src="https://cdn.dribbble.com/users/959389/screenshots/2788178/lion.png" alt="1">
-                    <figcaption>Work</figcaption>
-                </figure>
-            </div>
-        </section>
-        <section class="contact">
-            <h3><a href="">Hire Me </a></h3>
-        </section>
-         
+        
+
+
+        <script>
+                function openNav() {
+                    document.getElementById("myTopNav").style.width = "250px";
+                    // collects the Id and changes style from 0 to 250;
+                }
+                function closeNav() {
+                    document.getElementById("myTopNav").style.width = "0";
+                    // collects id and closes it back to 0
+                }
+        </script>
     </div>
 </body>
 </html>
