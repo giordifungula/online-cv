@@ -46,11 +46,14 @@ body {
     left: 0;
     overflow-x: hidden;
     /* this overflow hides the content that displays */
-    background: #111;
+    background: #ccc;
     transition: 1.0s; /* delay when the screen slides in  */
     padding-top: 20px;
     /* padding top on the sideBar */
     
+}
+header {
+    background: #131313;
 }
 .top-nav a {
     /* Styles for the list */
@@ -107,10 +110,11 @@ nav ul li{
     0% {
         opacity: 0;
         color: #eee;
+        transform: translateY(-150%);
     }
     50% {
         opacity: 0.5;
-        transform: translate(-150%);
+        /* transform: translate(100%); */
         color:#fff;
     }
     100% {
@@ -162,12 +166,15 @@ nav ul li{
   /* Properties when image is overed over  */
 }
 .aboutItem {
-    margin: 2%;
-    padding:2%; 
+    margin: 1%;
+    padding:1%; 
     /* create some space from all angles */
 }
 .content-main {
     background: rgb(150, 143, 197);
+    width: 300px;
+    padding: 2px;
+    text-align: center
 }
 .content-main h3 {
     color:#fff;
@@ -191,10 +198,32 @@ nav ul li{
     /* Intro about myself styles */
 }
 .about {
-    
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
+    /* Want to add a background image or color */
+}
+
+/* ################## Projects Section    ############### */
+.workItem figure img {
+    width: 250px;
+    height: auto;
+    transition: 2s;
+}
+.workItem figure img:hover {
+    transition: 2s;
+    transform: translateX(-10%);
+}
+.workItem  {
+    /* width: 30%; */
+    background: #eee;
+    padding: 10px;
+}
+.work {
+    background: url('/imgaes/BG_2.jpg');
+    height: 100vh;
+    background-position: center;
+    /* 2nd  */
 }
 /* ##############  Media Quries ############# */
 @media screen and (max-height: 650px) {

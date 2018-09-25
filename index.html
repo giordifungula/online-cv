@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="container">
-        <header>
+        <header id="Home">
             <div class="logo">
                 <!-- Logo goes here -->
                 <img src="" alt="">
@@ -19,36 +19,40 @@
                 <ul>
                     <a href="javascript:void(0)" class="closebtn" id="myCloseNav" onclick="closeNav()">&times;</a> 
                     <!-- close nav for responsive -->
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Projects</a></li>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Project">Projects</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
             <!-- <h2>Animated Sidenav Example</h2>
             <p>Click on the element below to open the side navigation menu.</p> -->
-            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+            <span style="font-size:30px;cursor:pointer; color: #fff" onclick="openNav()">&#9776;</span>
         </header>
         <div class="container backGround">
             <div class="center-content">
                 <h1>Giordi Fungula</h1>
                 <p>Junior Web Devloper</p>
             </div>
+            <!-- This is to center the content inside the div -->
         </div>
+        
         <div class="container">
-            <section class="about">
+            <section class="about" id="About">
                 <!-- stores the about section items -->
                <h2 class="head">About</h2>
                <hr class="mid-line">               
                <div class="aboutItem">
                   <img src="imgaes/me.jpg" alt="" class="img-me">
                   <p class="intro">
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore magna
-                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        Duis aute irure dolor in reprehenderit in voluptate velit 
-                        esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                        "A self-motived and eager to learn individual;
+                         this has made me a constant learner even now that
+                          I am finished with school, I am competent with learning 
+                          new technologies and exited for challenges, learning from
+                           others and growing with people. I believe my sense of humour
+                            helps me to get along with team members. I am a receptive to
+                             ideas and opinions of others and punctual., sunt in culpa qui 
+                             officia deserunt mollit anim id est laborum."
                   </p>
                   <!-- <img src="https://cdn.dribbble.com/users/959389/screenshots/2788178/lion.png" alt=""> -->
                </div>
@@ -56,56 +60,84 @@
                    <h2 class="head">Education</h2>
                    <hr class="mid-line">
                     <!--  -->
-                   <div class="content-main">
-                        <h3>Secondary Education</h3>
-                            <ul>
-                                <li>Queens Park High School 2012-2016</li>
-                            </ul>
-                   </div>
-                   <div class="content-main">
-                        <h3>Courses self taught</h3>
-                        <ul>
-                            <li>Coursera</li>
-                            <li>freeCodeCamp</li>
-                        </ul>
+                <div class="row">
+                    <div class="col-4">
+                        <div class="content-main">
+                             <h3>Secondary Education</h3>
+                                 <strong class="content-item">Queens Park High School bewteen 2012-2016</strong>
+                        </div>
+                    </div>
 
-                   </div>
-                   <div class="content-main">
-                        <h3>Tertiary Education</h3>
-                            <ul>
-                                <li>Unisa and UoPeople Studying Computing via distant learning 2018-2022.</li>
-                            </ul>
-                   </div>
-                   <p>This is my personal te xts is my personal texts is my per sonal text</p>
-                   <img src="https://cdn.dribbble.com/users/959389/screenshots/2788178/lion.png" alt="">
+                    <div class="col-4">
+                            <div class="content-main">
+                                 <h3>Tertiary Education</h3>
+                                     <strong>Unisa and UoPeople Studying Computing via distant learning 2018-2022.</strong>
+                            </div>
+                        </div>
+
+                    <div class="col-4">
+                        <div class="content-main">
+                             <h3>Courses self taught</h3>
+                             <strong>Coursera and FreeCodeCamp 2017-2018</strong>
+                        </div>
+
+                    </div>
+                    
+                </div> 
+               <!-- row completed here  -->
                 </div>
-               <div class="aboutItem">
-                  <h2 class="head">Projects</h2>
-                  <hr class="mid-line">                  
-                  <p>This is my personal te xts is my personal texts is my per sonal text</p>
-                  <img src="https://cdn.dribbble.com/users/959389/screenshots/2788178/lion.png" alt="">
-               </div>
            </section>
-           <section class="work">
+           <!-- about section completed -->
+
+           <section class="work" id="Project">
                <h2 class="head">Projects</h2>
-               <hr class="mid-line">               
-               <div class="workItem">
-                   <figure>
-                       <img src="https://cdn.dribbble.com/users/959389/screenshots/2788178/lion.png" alt="1">
-                       <figcaption>Work</figcaption>
-                   </figure>
+               <hr class="mid-line"> 
+               <h4 style="text-align:center;">Welcome, This is the Work I have done and work I am working on</h4>
+               <div class="row">
+                   <div class="col-3">
+                    <div class="workItem">
+                        <figure>
+                            <img src="imgaes/logo.jpg" alt="1">
+                            <figcaption>Work</figcaption>
+                        </figure>
+                    </div>
+                    <!-- work content 1 -->
+                   </div>
+                   <div class="col-3">
+                    <div class="workItem">
+                        <figure>
+                            <img src="imgaes/logo.jpg" alt="1">
+                            <figcaption>Work</figcaption>
+                        </figure>
+                    </div>
+                    <!-- work content 2 -->
+                   </div>
+                   <div class="col-3">
+                    <div class="workItem">
+                        <figure>
+                            <img src="imgaes/logo.jpg" alt="1">
+                            <figcaption>Work</figcaption>
+                        </figure>
+                    </div>
+                    <!-- work content 3 -->
+                   </div>
+                   <div class="col-3">
+                    <div class="workItem">
+                        <figure>
+                            <img src="imgaes/logo.jpg" alt="1">
+                            <figcaption>Work</figcaption>
+                        </figure>
+                    </div>
+                    <!-- work content 4 -->
+                   </div>
                </div>
-               <div class="workItem">
-                   <figure>
-                       <img src="https://cdn.dribbble.com/users/959389/screenshots/2788178/lion.png" alt="1">
-                       <figcaption>Work</figcaption>
-                   </figure>
-        </div>        
+            <!-- end of Project content row  -->
+                
 
 
         <script>
                 function openNav() {
-                    document.getElementById("myTopNav").style.width = "250px";
+                    document.getElementById("myTopNav").style.width = "200px";
                     // collects the Id and changes style from 0 to 250;
                 }
                 function closeNav() {
