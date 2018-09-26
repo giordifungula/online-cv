@@ -48,7 +48,7 @@ body {
     overflow-x: hidden;
     /* this overflow hides the content that displays */
     background: #ccc;
-    transition: 1.0s; /* delay when the screen slides in  */
+    transition: 0.4s; /* delay when the screen slides in  */
     padding-top: 20px;
     /* padding top on the sideBar */
     
@@ -63,7 +63,7 @@ header {
     font-size: 21px;
     color: #583d3d;
     display: block;
-    transition: 0.4s;
+    transition: 0.3s;
 }
 .top-nav a:hover {
     color:#fff;
@@ -225,6 +225,8 @@ nav ul li{
     background: url('../imgaes/BG_2.jpg');
     height: 100vh;
     background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
     /* 2nd  */
 }
 /* ##############  Media Queries ############# */
@@ -235,7 +237,8 @@ nav ul li{
 @media screen and (max-width: 750px) {
     .col-3 {
     width: 100%;
-    display: none;
+    text-align: center;
+    /* display: block; */
     }
     /* Header section */
     .center-content {
@@ -262,5 +265,12 @@ nav ul li{
         transition: 1s;
         margin: 2px;
         /* width: 250px; */
+    }
+}
+@media screen and(min-width: 768px) {
+    div.content-main {
+        width: 250px;
+        margin: 1px;
+        padding: 2px;
     }
 }
