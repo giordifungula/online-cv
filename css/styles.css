@@ -264,7 +264,7 @@ main .skill-item i:hover {
         border: 1px solid #eee;
         margin-top: 5px;
         resize: vertical;
-        margin-left: 5px;
+        margin-left: 15px;
     }
     input[type=submit] {
         background: royalblue;
@@ -272,9 +272,11 @@ main .skill-item i:hover {
         border:none;
         border-radius: 4px;
         width: 60px;
+        text-align: center;
+        margin-left: 15px;
     }
     label {
-        margin-left: 5px;
+        margin-left: 15px;
     }
 
 
