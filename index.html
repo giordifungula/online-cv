@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    
+    <title>Giordi CV</title>
 </head>
 <body>
     <div class="container">
@@ -22,12 +24,12 @@
                     <li><a href="#Home">Home</a></li>
                     <li><a href="#About">About</a></li>
                     <li><a href="#Project">Projects</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#Contact">Contact</a></li>
                 </ul>
             </nav>
             <!-- <h2>Animated Sidenav Example</h2>
             <p>Click on the element below to open the side navigation menu.</p> -->
-            <span style="font-size:30px;cursor:pointer; color: #fff" onclick="openNav()">&#9776;</span>
+            <span style="font-size:30px;cursor:pointer; color: #fff; margin: 10px; " onclick="openNav()">&#9776;</span>
         </header>
         <div class="container backGround">
             <div class="center-content">
@@ -47,12 +49,12 @@
                   <p class="intro">
                         "A self-motived and eager to learn individual;
                          this has made me a constant learner even now that
-                          I am finished with school, I am competent with learning 
-                          new technologies and exited for challenges, learning from
-                           others and growing with people. I believe my sense of humour
-                            helps me to get along with team members. I am a receptive to
-                             ideas and opinions of others and punctual., sunt in culpa qui 
-                             officia deserunt mollit anim id est laborum."
+                         I am finished with school, I am competent with learning 
+                        new technologies and exited for challenges, learning from
+                        others and growing with people. I believe my sense of humour
+                        helps me to get along with team members. I am a receptive to
+                        ideas and opinions of others and punctual., sunt in culpa qui 
+                        officia deserunt mollit anim id est laborum."
                   </p>
                   <!-- <img src="https://cdn.dribbble.com/users/959389/screenshots/2788178/lion.png" alt=""> -->
                </div>
@@ -80,7 +82,6 @@
                              <h3>Courses self taught</h3>
                              <strong>Coursera and FreeCodeCamp 2017-2018</strong>
                         </div>
-
                     </div>
                     
                 </div> 
@@ -128,10 +129,57 @@
                             <figcaption>Work</figcaption>
                         </figure>
                     </div>
-                    <!-- work content 4 -->
+                    <!-- work content 4 completed-->
                    </div>
                </div>
             <!-- end of Project content row  -->
+            <section class="work" id="Skills">
+                <h2 class="head">Skills</h2>
+                <hr class="mid-line">
+                
+                <main class="row">
+                    <div class="col-3">
+                        <div class="skill-item">
+                            <i class="fab fa-git"></i>
+                            <h5>GIT</h5>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="skill-item">
+                            <i class="fab fa-html5"></i>
+                            <h5>HTML</h5>
+                        </div>                        
+                    </div>
+                    <div class="col-3">
+                        <div class="skill-item">
+                            <i class="fab fa-css3-alt"></i>
+                            <h5>CSS</h5>
+                        </div>                        
+                    </div>
+                     <div class="col-3">
+                        <div class="skill-item">
+                                <i class="fab fa-js"></i>
+                                <h5>Javascript</h5>
+                        </div>                        
+                    </div>
+                </main>
+            </section>
+            <!-- contact section -->
+            <section class="contact" id="Contact">
+                    <h2 class="head">Contact</h2>
+                    <hr class="mid-line">
+                    <form action="">
+                        <label for="fname">Name</label> 
+                        <input type="text" id="fname" placeholder="name">
+
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="last name" placeholder="surename">
+
+                        <label for="subject">Message</label>
+                        <textarea id="subject" name="subject" placeholder="Your message" style="height: 200px"></textarea>
+                        <input type="Submit" value="Submit">
+                    </form>
+            </section>
                 
 
 
