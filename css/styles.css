@@ -8,7 +8,7 @@ body {
 }
 .container {
     width: 100%;
-    /* max-width: 1200px; */
+    max-width: 1200px;
 }
 * {
     box-sizing: border-box;
@@ -84,16 +84,10 @@ nav ul li{
 
 /* ############### Header file ############## */
 .backGround {
-    height: 150vh;
+    height: 100vh;
     text-align: center;
-    background: 
-    url('../imgaes/BG_1.png');
-    background-size: cover;
-    background-position: top;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
+    background: #3dfaaa;
+    
 }
 .center-content {
     position: absolute;
@@ -131,26 +125,6 @@ nav ul li{
     font-size: 2em;
     padding:4% 2% 1% 2%;
     text-align: center;
-}
-.mid-line {
-    /* width: 30%; */
-    border-bottom: 1px solid rgb(37, 34, 34);
-    width: 5%;
-    transition: 1s ease-in;
-    height: 10px;
-    position: relative;
-    top: 1%;
-    background: rgb(37, 34,34);
-    /* border: 1px solid red; */
-}
-.mid-line:hover {
-    /* border-bottom: 2px solid #eee; */
-    width:20%;
-    transition: 0.7s ease-out;
-    border: 1px solid rgb(37, 36, 36);
-    padding: 0 20px;
-    transform: translateY(-50%);
-    
 }
 .img-me {
     width: 300px;

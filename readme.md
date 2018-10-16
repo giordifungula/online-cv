@@ -1,4 +1,6 @@
-This is my CV Portfolio Website 
+# GiordiFungula_CV
+Working on my CV page
+The link to my Page online is https://giordifungula.github.io/GiordiFungula_CV/ 
+Thanks I will be updating my Website frequently.
 
-I am working on building my Personal CV Site,
- I will be adding to the cv as I built more projects and learn.
+Giordi Fungula
