@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
   margin: 0;
   padding: 0;
@@ -299,3 +300,320 @@ label {
     width: 250px; } }
 
 /*# sourceMappingURL=styles.css.map */
+=======
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    /* remove custom margin */
+    font-family: Roboto;
+    height: 100%;
+}
+.container {
+    width: 100%;
+    /* max-width: 1200px; */
+}
+* {
+    box-sizing: border-box;
+}
+
+/* Colums */
+.col-1{width:8.33% ;}  
+.col-2{width:16.66%;}  
+.col-3{width:25% ;}  
+.col-4{width:33.33%;}  
+.col-5{width: 41.66%;}  
+.col-6{width: 50%;}  
+.col-7{width: 58.33%;}  
+.col-8{width: 66.66%;}  
+.col-9{width: 75%;}  
+.col-10{width: 83.33%;}  
+.col-11{width: 91.66%;}  
+.col-12{width: 100%;} 
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    /* center the content in a row */
+}
+
+/* ########## Nav bar ########## */
+.top-nav {
+    height: 100%;
+    width: 0px; /* This will slide into the web page  */
+    /*  */
+    position: fixed; /* sets to fixed when you scrolll */
+    z-index: 1;  /* pushes this item in front of others  */
+    top: 0; 
+    left: 0;
+    overflow-x: hidden;
+    /* this overflow hides the content that displays */
+    background: #ccc;
+    transition: 0.4s; /* delay when the screen slides in  */
+    padding-top: 20px;
+    /* padding top on the sideBar */
+    
+}
+header {
+    background: #131313;
+}
+.top-nav a {
+    /* Styles for the list */
+    padding: 5px 5px 5px 5px;
+    text-decoration: none;
+    font-size: 21px;
+    color: #583d3d;
+    display: block;
+    transition: 0.3s;
+}
+.top-nav a:hover {
+    color:#fff;
+}
+.top-nav .closebtn {
+    /* the corner X button */
+    position: absolute;
+    top:0;
+    right: 15px;
+    font-size: 36px;
+    margin-left: 10px;
+}
+
+nav ul li{
+    display: inline;
+    text-anchor: none;
+}
+
+/* ############### Header file ############## */
+.backGround {
+    height: 50vh;
+    text-align: center;
+    background: 
+    url('../imgaes/BG_1.png');
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.center-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* center Content in middle */
+    font-size: 40px;
+     color: rgb(124, 93, 93);
+}
+.center-content h1 {
+    animation-name: fadeIn;
+    animation-duration: 4s;
+}
+@keyframes fadeIn{
+    0% {
+        opacity: 0;
+        color: #eee;
+        transform: translateY(-150%);
+    }
+    50% {
+        opacity: 0.5;
+        /* transform: translate(100%); */
+        color:#fff;
+    }
+    100% {
+        opacity: 1;
+        transition: ease-out;
+        color:#fff;
+    }
+}
+
+/* ########### About Section ############# */
+ h2.head {
+    font-size: 2em;
+    padding:4% 2% 1% 2%;
+    text-align: center;
+}
+
+.img-me {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    display: block;
+    border-radius: 50%;
+    transition: 1s;
+    /* Styling my image */
+}
+.img-me:hover {
+ opacity: 0.5;
+ transition: 2s;
+ background: rgb(179, 63, 63);  
+  /* Properties when image is overed over  */
+}
+.aboutItem {
+    margin: 1%;
+    padding:1%; 
+    /* create some space from all angles */
+}
+.content-main {
+    background: rgb(150, 143, 197);
+    width: 100%;
+    padding: 2px;
+    text-align: center
+}
+.content-main h3 {
+    color:#fff;
+    font-size: 1.5em;
+}
+.content-main ul {
+    list-style: none;
+    line-height: 16px;
+    font-size: 1.1em;
+}
+.content-main ul li {
+    line-height: 20px;
+    font-weight: 400;
+}
+
+.intro {
+    font-size: 1.5em;
+    text-indent: 2%;
+    color: #131313;
+    font-weight: 600;
+    /* Intro about myself styles */
+}
+.about {
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    /* Want to add a background image or color */
+}
+
+/* ################## Projects Section    ############### */
+.workItem figure img {
+    width: 250px;
+    height: auto;
+    transition: 2s;
+}
+.workItem figure img:hover {
+    transition: 2s;
+    transform: translateX(-10%);
+}
+.workItem  {
+    /* width: 30%; */
+    background: #eee;
+    padding: 10px;
+}
+.work {
+    background: url('../imgaes/BG_2.jpg');
+    height: 40vh;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    /* 2nd  */
+}
+/* ################ Skills section ############### */
+main .skill-item {
+    display: block;
+}
+main .skill-item i{
+    font-size: 2.5em;
+    background: transparent;
+    color: slateblue;
+    transition: 0.5s;
+}
+main .skill-item i:hover {
+    transform: translateX(-60%);
+}
+/* Skills section media querie */
+@media only screen and (max-width: 750px){
+    main .skill-item   {
+        width: 100%;
+        margin-top: 0;
+        padding: 0;
+        /* display: inline; */
+        float: left;
+        /* background: none; */
+        /* font-size: 4.5em; */
+
+    }
+}
+
+/* ############## Contact Section ############ */
+    input[type=text], select , textarea {
+        width: 100%;
+        padding: 16px;
+        border: 1px solid #eee;
+        margin-top: 5px;
+        resize: vertical;
+        margin-left: 15px;
+    }
+    input[type=submit] {
+        background: royalblue;
+        padding: 5px 10px;
+        border:none;
+        border-radius: 4px;
+        width: 60px;
+        text-align: center;
+        margin-left: 15px;
+    }
+    label {
+        margin-left: 15px;
+    }
+
+
+/* ##############  Media Queries ############# */
+@media screen and (max-height: 650px) {
+    .top-nav {padding-top: 10px;}
+    .top-nav a {font-size: 18px;}
+  }
+@media screen and (max-width: 750px) {
+    .col-3 {
+    width: 100%;
+    text-align: center;
+    /* display: block; */
+    }
+    /* Header section */
+    .center-content {
+        font-size: 25px;
+    }
+    /* Education section styles */
+    .col-4, .content-main {
+        width: 100%;
+        background: darkslateblue;
+    }
+    /* About me image */
+    .img-me {
+        width: 200px;
+        height: 200px;
+    }
+}
+@media screen and (min-width: 601px) and (max-width: 760px){
+    div.content-main strong div:hover {
+        z-index: 20000;
+        background: #d8a8a8;
+    }
+    div.content-main {
+        /* background: #131313; */
+        transition: 1s;
+        margin: 2px;
+        /* width: 250px; */
+    }
+}
+@media screen and(min-width: 768px) {
+    div.content-main {
+        width: 250px;
+        margin: 1px;
+        padding: 2px;
+    }
+    main .skill-item {
+        width: 180px;
+        height: 180px;
+        background: #583d3d;
+        text-align: center;
+        padding-top: 40px;
+        margin-top: 50%;
+    }
+}
+>>>>>>> b6bac2d57bb2ca3cea641a4ee0043efd6fc90441
