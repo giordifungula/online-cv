@@ -160,7 +160,7 @@ nav ul li {
 .backGround {
   height: 71vh;
   text-align: center;
-  background: url(http://www.expectingjoy.com/wp-content/uploads/2014/05/Home-Page-Header.png);
+  background: url(/images/BG_1.jpg);
 }
 
 .center-content {
@@ -177,6 +177,7 @@ nav ul li {
 h2 {
   text-align: center;
   margin: 50px 0;
+  margin-bottom: 30px;
   font-size: 40px;
   font-family: "Courier New", Courier, monospace;
   transition: 1s;
@@ -190,6 +191,14 @@ h2:hover {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 10px;
+}
+
+.center-icon i {
+  font-size: 50px;
+  overflow: hidden;
+  text-align: center;
+  display: block;
+  margin: 2px auto;
 }
 
 .intro-logo {
