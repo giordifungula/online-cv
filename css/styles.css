@@ -160,7 +160,7 @@ nav ul li {
 .backGround {
   height: 71vh;
   text-align: center;
-  background: url(/images/BG_1.jpg);
+  background: url(https://giordifungula.github.io/GiordiFungula_CV/images/BG_1.jpg);
 }
 
 .center-content {
@@ -253,27 +253,36 @@ h2:hover {
   /* create some space from all angles */
 }
 
+.edu-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+}
+
 .content-main {
-  background: #968fc5;
-  width: 300px;
-  padding: 2px;
-  text-align: center;
+  background: #449DD1;
+  font-size: 1.2em;
+  font-family: "Courier New", Courier, monospace;
+  padding: 10px;
+  margin: 5px;
 }
 
 .content-main h3 {
-  color: #fff;
-  font-size: 1.5em;
+  color: #ccc;
+  font-size: 1.6em;
+  text-align: left;
 }
 
 .content-main ul {
   list-style: none;
-  line-height: 16px;
+  line-height: 20px;
   font-size: 1.1em;
+  color: #ca1f1f;
 }
 
 .content-main ul li {
-  line-height: 20px;
-  font-weight: 400;
+  line-height: 30px;
+  font-weight: 700;
 }
 
 .intro {
@@ -388,11 +397,6 @@ label {
   }
 
   /* Education section styles */
-  .col-4, .content-main {
-    width: 100%;
-    background: darkslateblue;
-  }
-
   /* About me image */
   .img-me {
     width: 200px;
@@ -402,6 +406,10 @@ label {
 @media screen and (min-width: 601px) {
   .aboutItem {
     display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .edu-section {
     grid-template-columns: repeat(3, 1fr);
   }
 
@@ -419,8 +427,8 @@ label {
   }
 }
 @media screen and (min-width: 768px) {
-  div.content-main {
-    width: 250px;
+  .backGround {
+    height: 100vh;
   }
 }
 

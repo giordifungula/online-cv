@@ -122,7 +122,7 @@ nav ul li{
 .backGround {
     height: 71vh;
     text-align: center;
-    background: url(/images/BG_1.jpg);
+    background: url(https://giordifungula.github.io/GiordiFungula_CV/images/BG_1.jpg);
     // landing page background link from online 
 }
 .center-content {
@@ -173,9 +173,7 @@ nav ul li{
         font-weight: 300;
     }
 }
-i {
-    
-}
+
 .intro-img {
     img {
         width: 100px;
@@ -215,29 +213,41 @@ i {
  transition: 2s;
   /* Properties when image is overed over  */
 }
+
 .aboutItem {
     margin: 1%;
     padding:1%; 
     /* create some space from all angles */
 }
+// education section
+.edu-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+}
 .content-main {
-    background: rgb(150, 143, 197);
-    width: 300px;
-    padding: 2px;
-    text-align: center
+    background: $light-blue;
+    // text-align: center;
+    font-size: 1.2em;
+    font-family: 'Courier New', Courier, monospace;
+    padding:10px;
+    margin: 5px;
 }
 .content-main h3 {
-    color:#fff;
-    font-size: 1.5em;
+    color:#ccc;
+    font-size: 1.6em;
+    text-align: left;
 }
 .content-main ul {
     list-style: none;
-    line-height: 16px;
+    line-height: 20px;
     font-size: 1.1em;
+    color: #ca1f1f;
+
 }
 .content-main ul li {
-    line-height: 20px;
-    font-weight: 400;
+    line-height: 30px;
+    font-weight: 700;
 }
 
 .intro {
@@ -345,10 +355,7 @@ main .skill-item i:hover {
         font-size: 25px;
     }
     /* Education section styles */
-    .col-4, .content-main {
-        width: 100%;
-        background: darkslateblue;
-    }
+   
     /* About me image */
     .img-me {
         width: $my-spacing;
@@ -360,6 +367,9 @@ main .skill-item i:hover {
         display: grid;
         grid-template-columns: repeat(3,1fr);
         
+    }
+    .edu-section {
+        grid-template-columns: repeat(3, 1fr);
     }
     .intro-img{
         img {
@@ -381,12 +391,7 @@ main .skill-item i:hover {
     }
 }
 @media screen and(min-width: 768px) {
-    div.content-main {
-        width: 250px;
-        // margin: 1px;
-        // padding: 2px;
-    }
     .backGround {
-    //    height: 100vh;
+       height: 100vh;
     }
 }
