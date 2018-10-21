@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
 body {
     margin: 0;
     padding: 0;
@@ -77,10 +81,12 @@ header {
     /* Styles for the list */
     padding: 5px 5px 5px 5px;
     text-decoration: none;
-    font-size: 21px;
+    font-size: 26px;
     color:#449DD1;
     display: block;
     transition: 0.3s;
+    text-align: left;
+    text-transform: uppercase;
 }
 .top-nav a:hover {
     color:#fff;
@@ -101,7 +107,7 @@ nav ul li{
 
 /* ############### Header file ############## */
 .backGround {
-    height: 100vh;
+    height: 71vh;
     text-align: center;
     // background: rgb(211, 8, 8);
     background: url(/imgaes/BG_1.jpg);
@@ -111,8 +117,9 @@ nav ul li{
 }
 .center-content {
     position: absolute;
-    top: 60%;
+    top: 50%;
     left: 50%;
+    // centers the content inside div
     transform: translate(-50%, -50%);
     /* center Content in middle */
     font-size: 40px;
@@ -253,10 +260,10 @@ main .skill-item i:hover {
     }
 
 /* ##############  Media Queries ############# */
-@media screen and (max-height: 650px) {
-    .top-nav {padding-top: 10px;}
-    .top-nav a {font-size: 18px;}
-  }
+// @media screen and (max-height: 650px) {
+//     .top-nav {padding-top: 10px;}
+//     .top-nav a {font-size: 18px;}
+//   }
 @media screen and (max-width: 750px) {
     .col-3 {
     width: 100%;
@@ -266,7 +273,6 @@ main .skill-item i:hover {
     /* Header section */
     .center-content {
         font-size: 25px;
-        color: #FFCAB1;
     }
     /* Education section styles */
     .col-4, .content-main {
@@ -296,5 +302,8 @@ main .skill-item i:hover {
         width: 250px;
         // margin: 1px;
         // padding: 2px;
+    }
+    .backGround {
+    //    height: 100vh;
     }
 }
