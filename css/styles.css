@@ -20,10 +20,14 @@ body {
 a {
   text-decoration: none;
   color: #000000;
-  transition: 1s;
+  transition: 0.9;
 }
 a:hover {
   color: #449DD1;
+}
+
+p {
+  font-weight: 500;
 }
 
 img {
@@ -175,6 +179,11 @@ h2 {
   margin: 50px 0;
   font-size: 40px;
   font-family: "Courier New", Courier, monospace;
+  transition: 1s;
+  text-decoration: underline;
+}
+h2:hover {
+  text-decoration: underline #449DD1;
 }
 
 .aboutItem {
@@ -190,13 +199,37 @@ h2 {
   font-size: 100px;
   overflow: hidden;
 }
-.intro-img {
-  width: 200px;
-  height: 200;
+.intro-logo h3 {
+  font-weight: 300;
+}
+
+.intro-img img {
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   margin: 0 auto;
+  margin-bottom: 10px;
+  display: block;
   transition: 1s;
   /* Styling my image */
+}
+.intro-img input {
+  text-align: center;
+  display: block;
+  width: 200px;
+  padding: 20px;
+  border: none;
+  background: #449DD1;
+  font-size: 20px;
+  color: #ccc;
+  font-weight: 400;
+  text-align: center;
+  margin: 0 auto;
+  transition: 0.7s;
+}
+.intro-img input:hover {
+  background: #000000;
+  cursor: pointer;
 }
 
 .img-me:hover {
@@ -238,8 +271,8 @@ h2 {
   font-size: 1.2em;
   text-indent: 2%;
   color: #449DD1;
-  font-weight: 600;
   padding: 20px;
+  text-align: center;
   /* Intro about myself styles */
 }
 
@@ -361,6 +394,16 @@ label {
   .aboutItem {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .intro-img img {
+    width: 200px;
+    height: 200px;
+  }
+  .intro-img img input {
+    display: block;
+    margin: 0 auto;
+    width: 100px;
   }
 }
 @media screen and (min-width: 768px) {

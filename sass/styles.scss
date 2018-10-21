@@ -1,8 +1,10 @@
 * {
     box-sizing: border-box;
     overflow-x: hidden;
-    
 }
+// variables 
+$light-blue: #449DD1;
+
 body {
     margin: 0;
     padding: 0;
@@ -19,10 +21,14 @@ body {
 a {
     text-decoration: none;
     color:#000000;
-    transition: 1s;
+    transition: 0.9;
     &:hover {
-        color: #449DD1;
+        color: $light-blue;
     }
+    // styling default links
+}
+p {
+    font-weight: 500;
 }
 img {
     width: 100%;
@@ -88,7 +94,7 @@ header {
     padding: 5px 5px 5px 5px;
     text-decoration: none;
     font-size: 26px;
-    color:#449DD1;
+    color:$light-blue;
     display: block;
     transition: 0.3s;
     text-align: left;
@@ -115,11 +121,8 @@ nav ul li{
 .backGround {
     height: 71vh;
     text-align: center;
-    // background: rgb(211, 8, 8);
     background: url(/imgaes/BG_1.jpg);
-    // background-position: center;
-    // background-size: cover;
-    
+    // landing page background
 }
 .center-content {
     position: absolute;
@@ -138,6 +141,11 @@ nav ul li{
      margin: 50px 0;
      font-size: 40px;
      font-family: 'Courier New', Courier, monospace;
+     transition: 1s;
+     text-decoration:underline;
+     &:hover{
+     text-decoration:underline $light-blue;
+     } 
  }
 .aboutItem {
     display: grid;
@@ -151,21 +159,47 @@ nav ul li{
     }
     text-align: center;
     // display: block;
-    // color:#449DD1;
+    // color:$light-blue;
     h3 {
-        
+        font-weight: 300;
     }
 }
 i {
     
 }
 .intro-img {
-    width: 200px;
-    height: 200;
+    img {
+        width: 100px;
+    height: 100px;
     border-radius: 50%;
     margin: 0 auto;
+    margin-bottom: 10px;
+    // some space on the mobile view
+    display: block;
+    // margin: 0 auto;
     transition: 1s;
     /* Styling my image */
+    }
+    input{
+        text-align: center;
+        display: block;
+        width: 200px;
+        padding: 20px;
+        border: none;
+        background: $light-blue;
+        font-size: 20px;
+        color: #ccc;
+        font-weight: 400;
+        text-align: center;
+        margin:0 auto;
+        transition: 0.7s;
+        &:hover {
+            background: #000000;
+            cursor: pointer;
+        }
+    }
+    
+    
 }
 .img-me:hover {
  opacity: 0.5;
@@ -200,9 +234,9 @@ i {
 .intro {
     font-size: 1.2em;
     text-indent: 2%;
-    color:#449DD1;
-    font-weight: 600;
+    color:$light-blue;
     padding: 20px;
+    text-align: center;
     /* Intro about myself styles */
 }
 .about {
@@ -316,7 +350,20 @@ main .skill-item i:hover {
     .aboutItem {
         display: grid;
         grid-template-columns: repeat(3,1fr);
+        
+    }
+    .intro-img{
+        img {
+            width: 200px;
+            height: 200px;
 
+            input {
+                display: block;
+                margin: 0 auto;
+                // display: block;
+                width: 100px;
+            }
+        }
         
     }
 }
