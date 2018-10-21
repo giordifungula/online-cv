@@ -259,17 +259,8 @@ nav ul li{
     background: #eee;
 }
 
-/* ################## Projects Section    ############### */
-.work-grid {
-    display: grid;
-    grid-template-columns: repeat(1,1fr);
-    grid-template-rows: repeat(4,1fr);
-    grid-gap: 10px;
-    
-    img {
-        // width: 100%;
-    }
-}
+/* ################ Projects Section    ############### */
+
 
 .work {
     background: url('../images/BG_2.jpg');
@@ -277,7 +268,22 @@ nav ul li{
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
-    /* 2nd  */
+}
+figure {
+    margin: 0;
+}
+.work-grid {
+    display: block;
+    // grid-template-columns: 1fr;
+    // grid-template-rows: repeat(4,1fr);
+    // grid-gap: 10px;
+    
+    img {
+        // width: 100%;
+    }
+    .w-grid{
+        // display: grid;
+    }
 }
 /* ################ Skills section ############### */
 main .skill-item {
@@ -382,6 +388,14 @@ main .skill-item i:hover {
     .work-grid {
         display: grid;
         grid-template-columns: repeat(3,1fr);
+        grid-template-rows: auto-fit(4,1fr);
+
+        .w-grid1 {
+            grid-column: span 2;
+        }
+        .w-grid2 {
+            grid-row-start: 1 / span 2;
+        }
     }
 }
 @media screen and(min-width: 768px) {
