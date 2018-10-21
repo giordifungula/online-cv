@@ -42,17 +42,31 @@
                 <!-- stores the about section items -->
                <h2 class="head">About</h2>             
                <div class="aboutItem">
-                  <img src="imgaes/me.jpg" alt="" class="img-me">
-                  <p class="intro">
-                        "A self-motived and eager to learn individual;
-                         this has made me a constant learner even now that
-                         I am finished with school, I am competent with learning 
-                        new technologies and exited for challenges, learning from
-                        others and growing with people. I believe my sense of humour
-                        helps me to get along with team members. I am a receptive to
-                        ideas and opinions of others and punctual., sunt in culpa qui 
-                        officia deserunt mollit anim id est laborum."
-                  </p>
+                  <div class="intro">
+                        <p>A self-motived and eager to learn individual;
+                            this has made him a constant learner even now that
+                            I am finished with school.
+                        </p> 
+                        <p>
+                        Very competent with learning 
+                        new technologies and exited any challenges, learning from
+                        others and growing with people.
+                        </p>
+                  </div>
+                  <div class="intro-logo">
+                      <div class="intro-c1">
+                        <i class="fas fa-file"></i>
+                        <h3><a href="#">View Resume</a></h3>
+                      </div>
+                    <div class="intro-c2">
+                        <i class="fab fa-github"></i>
+                        <h3><a href="#">GitHub Repo</a></h3>                        
+                    </div>
+                  </div>
+                  <div class="intro-img">
+                    <img src="imgaes/me.jpg" alt="" class="img-me">
+                  </div>
+
                   <!-- <img src="https://cdn.dribbble.com/users/959389/screenshots/2788178/lion.png" alt=""> -->
                </div>
                <div class="aboutItem">
@@ -164,7 +178,6 @@
             <!-- contact section -->
             <section class="contact" id="Contact">
                     <h2 class="head">Contact</h2>
-                    <hr class="mid-line">
                     <form action="">
                         <label for="fname">Name</label> 
                         <input type="text" id="fname" placeholder="name">
@@ -183,7 +196,7 @@
         <script>
                 function openNav() {
                     document.getElementById("myTopNav").style.width = "200px";
-                    document.getElementById("myTopNav").style.background = "#3dfaaa";
+                    // document.getElementById("myTopNav").style.background = "#3dfaaa";
                     // collects the Id and changes style from 0 to 200;
                 }
                 function closeNav() {

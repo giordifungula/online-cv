@@ -8,13 +8,22 @@ body {
   padding: 0;
   overflow-x: hidden;
   /* remove custom margin */
-  font-family: Roboto;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   height: 100%;
   width: 100%;
 }
 
 .container {
   width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+  transition: 1s;
+}
+a:hover {
+  color: #449DD1;
 }
 
 img {
@@ -28,10 +37,6 @@ img {
 .logo {
   width: 60px;
   float: right;
-}
-
-* {
-  box-sizing: border-box;
 }
 
 /* Colums */
@@ -160,23 +165,36 @@ nav ul li {
   left: 50%;
   transform: translate(-50%, -50%);
   /* center Content in middle */
-  font-size: 40px;
+  font-size: 32px;
   color: #ccc;
 }
 
 /* ########### About Section ############# */
-h2.head {
-  font-size: 2em;
-  padding: 4% 2% 1% 2%;
+h2 {
   text-align: center;
+  margin: 50px 0;
+  font-size: 40px;
+  font-family: "Courier New", Courier, monospace;
 }
 
-.img-me {
-  width: 300px;
-  height: 300px;
-  margin: 0 auto;
-  display: block;
+.aboutItem {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+}
+
+.intro-logo {
+  text-align: center;
+}
+.intro-logo i {
+  font-size: 100px;
+  overflow: hidden;
+}
+.intro-img {
+  width: 200px;
+  height: 200;
   border-radius: 50%;
+  margin: 0 auto;
   transition: 1s;
   /* Styling my image */
 }
@@ -184,7 +202,6 @@ h2.head {
 .img-me:hover {
   opacity: 0.5;
   transition: 2s;
-  background: #b33f3f;
   /* Properties when image is overed over  */
 }
 
@@ -218,10 +235,11 @@ h2.head {
 }
 
 .intro {
-  font-size: 1.5em;
+  font-size: 1.2em;
   text-indent: 2%;
-  color: #F77F00;
+  color: #449DD1;
   font-weight: 600;
+  padding: 20px;
   /* Intro about myself styles */
 }
 
@@ -230,6 +248,7 @@ h2.head {
   background-size: cover;
   background-position: center;
   /* Want to add a background image or color */
+  background: #eee;
 }
 
 /* ################## Projects Section    ############### */
@@ -338,17 +357,10 @@ label {
     height: 200px;
   }
 }
-@media screen and (min-width: 601px) and (max-width: 760px) {
-  div.content-main strong div:hover {
-    z-index: 20000;
-    background: #d8a8a8;
-  }
-
-  div.content-main {
-    /* background: #131313; */
-    transition: 1s;
-    margin: 2px;
-    /* width: 250px; */
+@media screen and (min-width: 601px) {
+  .aboutItem {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 @media screen and (min-width: 768px) {
