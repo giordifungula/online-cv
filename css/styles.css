@@ -161,6 +161,7 @@ nav ul li {
   height: 71vh;
   text-align: center;
   background: url(https://giordifungula.github.io/GiordiFungula_CV/images/BG_1.jpg);
+  background-repeat: no-repeat;
 }
 
 .center-content {
@@ -275,14 +276,6 @@ h2:hover {
 
 .content-main ul {
   list-style: none;
-  line-height: 20px;
-  font-size: 1.1em;
-  color: #ca1f1f;
-}
-
-.content-main ul li {
-  line-height: 30px;
-  font-weight: 700;
 }
 
 .intro {
@@ -303,23 +296,12 @@ h2:hover {
 }
 
 /* ################## Projects Section    ############### */
-.workItem figure img {
-  width: 250px;
-  height: auto;
-  transition: 2s;
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 10px;
 }
-
-.workItem figure img:hover {
-  transition: 2s;
-  transform: translateX(-10%);
-}
-
-.workItem {
-  /* width: 30%; */
-  background: #eee;
-  padding: 10px;
-}
-
 .work {
   background: url("../images/BG_2.jpg");
   height: 100vh;
@@ -424,6 +406,11 @@ label {
     display: block;
     margin: 0 auto;
     width: 200px;
+  }
+
+  .work-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 @media screen and (min-width: 768px) {
