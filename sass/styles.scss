@@ -264,9 +264,11 @@ nav ul li{
 
 .work {
     background:$light-blue;
+    // adds a background of light blue
 }
 figure {
     margin: 0;
+    // removes default spacing on tag
 }
 .work-grid {
     display: grid;
@@ -277,14 +279,15 @@ figure {
     img {
         width: 100%;
         margin: 0 auto;
+        // makes image 100% of screen and centers
     }
-    .w-grid{
-        // display: grid;
-    }
+    
 }
 /* ################ Skills section ############### */
 .skils {
     background: #eee;
+    margin: 20px;
+    // this adds space around skills section
 }
 .skill-item {
     display: grid;

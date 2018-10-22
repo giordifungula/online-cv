@@ -314,9 +314,11 @@ figure {
   width: 100%;
   margin: 0 auto;
 }
+
 /* ################ Skills section ############### */
 .skils {
   background: #eee;
+  margin: 20px;
 }
 
 .skill-item {
