@@ -297,11 +297,7 @@ h2:hover {
 
 /* ################ Projects Section    ############### */
 .work {
-  background: url("../images/BG_2.jpg");
-  height: 100vh;
-  background-position: center;
-  background-attachment: fixed;
-  background-size: cover;
+  background: #449DD1;
 }
 
 figure {
@@ -309,27 +305,18 @@ figure {
 }
 
 .work-grid {
-  display: block;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2;
+  grid-gap: 10px;
+}
+.work-grid img {
+  width: 100%;
+  margin: 0 auto;
 }
 /* ################ Skills section ############### */
-main .skill-item {
-  width: 180px;
-  height: 180px;
-  background: #583d3d;
-  text-align: center;
-  padding-top: 40px;
-  margin-top: 50%;
-}
-
-main .skill-item i {
-  font-size: 4.5em;
-  background: transparent;
-  color: slateblue;
-  transition: 0.5s;
-}
-
-main .skill-item i:hover {
-  transform: translateX(-60%);
+.skils {
+  background: #eee;
 }
 
 /* Skills section media querie */
@@ -411,13 +398,6 @@ label {
   .work-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto-fit(4, 1fr);
-  }
-  .work-grid .w-grid1 {
-    grid-column: span 2;
-  }
-  .work-grid .w-grid2 {
-    grid-row-start: 1/span 2;
   }
 }
 @media screen and (min-width: 768px) {
