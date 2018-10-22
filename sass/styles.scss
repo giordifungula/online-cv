@@ -332,8 +332,11 @@ main {
         resize: vertical;
         margin-left: 15px;
     }
+    #subject {
+        // width: 80%;
+    }
     input[type=submit] {
-        background: royalblue;
+        background: $light-blue;
         padding: 5px 10px;
         border:none;
         border-radius: 4px;

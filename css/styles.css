@@ -324,6 +324,7 @@ figure {
 .skill-item {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
 }
 .skill-item i {
   font-size: 50px;
@@ -337,6 +338,7 @@ figure {
 }
 .skill-item p {
   grid-column: span 2;
+  margin: 10px;
 }
 
 /* Skills section media querie */
@@ -359,7 +361,7 @@ input[type=text], select, textarea {
 }
 
 input[type=submit] {
-  background: royalblue;
+  background: #449DD1;
   padding: 5px 10px;
   border: none;
   border-radius: 4px;

@@ -225,8 +225,8 @@
                         <input type="text" id="lname" name="last name" placeholder="surename">
 
                         <label for="subject">Message</label>
-                        <textarea id="subject" name="subject" placeholder="Your message" style="height: 200px"></textarea>
-                        <input type="Submit" value="Submit">
+                        <textarea  name="subject" placeholder="Your message" style="height: 128px"></textarea>
+                        <input type="Submit" value="Submit" id="subject">
                     </form>
             </section>
                 
@@ -241,6 +241,12 @@
                 function closeNav() {
                     document.getElementById("myTopNav").style.width = "0";
                     // collects id and closes it back to 0
+                }
+                function thankYou(){
+                    var x = document.getElementById("subject");
+                    x.addEventListener(click, function(){
+                        console.log("Thank you for submitting the form");
+                    });
                 }
         </script>
     </div>
