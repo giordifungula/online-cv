@@ -319,6 +319,24 @@ figure {
   background: #eee;
 }
 
+.skill-item {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.skill-item i {
+  font-size: 50px;
+  text-align: center;
+  margin: auto;
+  overflow: hidden;
+}
+.skill-item h5 {
+  color: #449DD1;
+  font-size: 1.2em;
+}
+.skill-item p {
+  grid-column: span 2;
+}
+
 /* Skills section media querie */
 @media only screen and (max-width: 750px) {
   main .skill-item {

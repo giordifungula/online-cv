@@ -286,6 +286,25 @@ figure {
 .skils {
     background: #eee;
 }
+.skill-item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    i {
+        font-size: 50px;
+        text-align: center;
+        margin: auto;
+        overflow: hidden;
+
+    }
+    h5 {
+        color: $light-blue;
+        font-size: 1.2em;
+    }
+    p {
+        grid-column: span 2;
+    }
+}
 main {
     
 }
