@@ -292,6 +292,7 @@ figure {
 .skill-item {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
 
     i {
         font-size: 50px;
@@ -306,6 +307,7 @@ figure {
     }
     p {
         grid-column: span 2;
+        margin:10px;
     }
 }
 main {
