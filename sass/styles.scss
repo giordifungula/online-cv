@@ -80,9 +80,16 @@ img {
 
 /* ########## Nav bar ########## */
 .top-nav{
-    display: inline;
+    transition: 0.9s;
+    overflow: hidden;
+
+    a {
+        padding: 0 10px;
+        // spacing around links
+    }
+    // display: inline;
     li {
-    display: inline;
+    // display: inline;
 
     }
 }
@@ -94,7 +101,7 @@ header {
 }
 
 .top-nav a:hover {
-    color:#fff;
+    background:#fff;
 }
 .top-nav .closebtn {
     /* the corner X button */
