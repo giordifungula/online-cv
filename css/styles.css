@@ -44,6 +44,7 @@ img {
 .logo {
   width: 60px;
   float: right;
+  padding: 9px;
 }
 
 /* Colums */
