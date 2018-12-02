@@ -269,8 +269,24 @@ main {
 }
 
 /* ################ Projects Section    ############### */
-
-
+// Animations
+@keyframes slideIn {
+    0% {
+        transform: translateX(-110%);
+    }
+    50% {
+        transform : translateX(-70%);
+    }
+    80% {
+        transform : translateX(10%);
+    }
+}
+.w-grid {
+    // position: absolute;
+   animation-name: slideIn;
+   animation-duration: 4s;
+//    animation: ease-in;
+}
 .work {
     background:$light-blue;
     // adds a background of light blue

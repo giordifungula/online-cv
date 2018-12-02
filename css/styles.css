@@ -280,6 +280,22 @@ h2:hover {
 }
 
 /* ################ Projects Section    ############### */
+@keyframes slideIn {
+  0% {
+    transform: translateX(-110%);
+  }
+  50% {
+    transform: translateX(-70%);
+  }
+  80% {
+    transform: translateX(10%);
+  }
+}
+.w-grid {
+  animation-name: slideIn;
+  animation-duration: 4s;
+}
+
 .work {
   background: #449DD1;
 }
