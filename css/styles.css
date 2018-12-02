@@ -7,10 +7,9 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  scroll-behavior: unset;
   /* remove custom margin */
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  height: 100%;
-  width: 100%;
 }
 
 .container {
@@ -19,8 +18,9 @@ body {
 
 a {
   text-decoration: none;
-  color: #000000;
-  transition: 0.9;
+  color: #1591da;
+  transition: 0.5s;
+  font-size: 1.2em;
 }
 a:hover {
   color: #449DD1;
@@ -102,40 +102,15 @@ img {
 
 /* ########## Nav bar ########## */
 .top-nav {
-  height: 100%;
-  width: 0px;
-  /* This will slide into the web page  */
-  /*  */
-  position: fixed;
-  /* sets to fixed when you scrolll */
-  z-index: 1;
-  /* pushes this item in front of others  */
-  top: 0;
-  left: 0;
-  overflow-x: hidden;
-  /* this overflow hides the content that displays */
-  background: #000000;
-  transition: 0.4s;
-  /* delay when the screen slides in  */
-  padding-top: 20px;
-  /* padding top on the sideBar */
+  display: inline;
+}
+.top-nav li {
+  display: inline;
 }
 
 header {
   background: #000000;
   height: 70px;
-}
-
-.top-nav a {
-  /* Styles for the list */
-  padding: 5px 5px 5px 5px;
-  text-decoration: none;
-  font-size: 26px;
-  color: #449DD1;
-  display: block;
-  transition: 0.3s;
-  text-align: left;
-  text-transform: uppercase;
 }
 
 .top-nav a:hover {
@@ -348,6 +323,22 @@ figure {
     margin-top: 0;
     padding: 0;
     background: none;
+  }
+
+  .top-nav {
+    /*width: 0px;  This will slide into the web page  */
+    /* 
+    position: fixed; /* sets to fixed when you scrolll 
+    z-index: 1;  /* pushes this item in front of others  
+     
+    top: 10px;  
+    left: 0;
+    overflow-x: hidden;
+    this overflow hides the content that displays 
+    background: #000000;
+    transition: 0.4s; /* delay when the screen slides in  
+    padding-top: 20px;
+    /* padding top on the sideBar */
   }
 }
 /* ############## Contact Section ############ */

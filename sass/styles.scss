@@ -1,19 +1,24 @@
+
+// ========================= variables  =================== //
+
+$light-blue: #449DD1;
+$my-spacing: 200px;
+
+// =============== Base Styles ====================== //
+
 * {
     box-sizing: border-box;
     overflow-x: hidden;
 }
-// variables 
-$light-blue: #449DD1;
-$my-spacing: 200px;
 
 body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    scroll-behavior: unset;
+
     /* remove custom margin */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    height: 100%;
-    width: 100%;
 }
 .container {
     width: 100%;
@@ -21,8 +26,9 @@ body {
 }
 a {
     text-decoration: none;
-    color:#000000;
-    transition: 0.9;
+    color:#1591da;
+    transition: 0.5s;
+    font-size: 1.2em;
     &:hover {
         color: $light-blue;
     }
@@ -37,6 +43,8 @@ img {
 }
 #myTopNav {
     float: left;
+
+    
 }
 
 // logo styles
@@ -70,37 +78,20 @@ img {
 }
 
 /* ########## Nav bar ########## */
-.top-nav {
-    height: 100%;
-    width: 0px; /* This will slide into the web page  */
-    /*  */
-    position: fixed; /* sets to fixed when you scrolll */
-    z-index: 1;  /* pushes this item in front of others  */
-    top: 0; 
-    left: 0;
-    overflow-x: hidden;
-    /* this overflow hides the content that displays */
-    background: #000000;
-    transition: 0.4s; /* delay when the screen slides in  */
-    padding-top: 20px;
-    /* padding top on the sideBar */
-    
+.top-nav{
+    display: inline;
+    li {
+    display: inline;
+
+    }
 }
+
+
 header {
     background: #000000;
     height: 70px;
 }
-.top-nav a {
-    /* Styles for the list */
-    padding: 5px 5px 5px 5px;
-    text-decoration: none;
-    font-size: 26px;
-    color:$light-blue;
-    display: block;
-    transition: 0.3s;
-    text-align: left;
-    text-transform: uppercase;
-}
+
 .top-nav a:hover {
     color:#fff;
 }
@@ -118,6 +109,9 @@ nav ul li{
     text-anchor: none;
 }
 
+main {
+    
+}
 /* ############### Header file ############## */
 .backGround {
     height: 71vh;
@@ -310,9 +304,7 @@ figure {
         margin:10px;
     }
 }
-main {
-    
-}
+
 /* Skills section media querie */
 @media only screen and (max-width: 750px){
     main .skill-item   {
@@ -320,6 +312,22 @@ main {
         margin-top: 0;
         padding: 0;
         background: none;
+    }
+    .top-nav {
+        // height: 100%;
+        /*width: 0px;  This will slide into the web page  */
+        /* 
+        position: fixed; /* sets to fixed when you scrolll 
+        z-index: 1;  /* pushes this item in front of others  
+         
+        top: 10px;  
+        left: 0;
+        overflow-x: hidden;
+        this overflow hides the content that displays 
+        background: #000000;
+        transition: 0.4s; /* delay when the screen slides in  
+        padding-top: 20px;
+        /* padding top on the sideBar */
     }
 }
 
@@ -420,4 +428,19 @@ main {
     .backGround {
        height: 100vh;
     }
+    .top-nav {
+        // background: #449DD1;
+        // height:100px;
+    }
+    // .top-nav a {
+    //     /* Styles for the list */
+    //     padding: 5px 5px 5px 5px;
+    //     text-decoration: none;
+    //     font-size: 26px;
+    //     color:$light-blue;
+    //     display: block;
+    //     transition: 0.3s;
+    //     text-align: left;
+    //     text-transform: uppercase;
+    // }
 }

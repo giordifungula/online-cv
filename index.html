@@ -19,7 +19,7 @@
             </div>
             <nav class="top-nav" id="myTopNav">
                 <ul>
-                    <a href="javascript:void(0)" class="closebtn" id="myCloseNav" onclick="closeNav()">&times;</a> 
+                    <!-- <a href="javascript:void(0)" class="closebtn" id="myCloseNav" onclick="closeNav()">&times;</a>  -->
                     <!-- close nav for responsive -->
                     <li><a href="#Home">Home</a></li>
                     <li><a href="#About">About</a></li>
@@ -27,7 +27,7 @@
                     <li><a href="#Contact">Contact</a></li>
                 </ul>
             </nav>
-            <span style="font-size:30px;cursor:pointer; color: #fff; margin: 10px;clear: both " onclick="openNav()">&#9776;</span>
+            <!-- <span style="font-size:30px;cursor:pointer; color: #fff; margin: 10px;clear: both " onclick="openNav()">&#9776;</span> -->
         </header>
         <div class="container backGround">
             <div class="center-content">
@@ -230,9 +230,11 @@
                     </form>
             </section>
                 
-
-
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="js/jquery-2.1.4.js"></script>
         <script>
+            $("html, body").animate({ scrollTop: 0 }, "slow");
+
                 function openNav() {
                     document.getElementById("myTopNav").style.width = "200px";
                     // document.getElementById("myTopNav").style.background = "#3dfaaa";
