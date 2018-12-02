@@ -3,11 +3,14 @@
   overflow-x: hidden;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  scroll-behavior: unset;
   /* remove custom margin */
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
@@ -135,8 +138,13 @@ nav ul li {
 .backGround {
   height: 71vh;
   text-align: center;
-  background: url(https://giordifungula.github.io/GiordiFungula_CV/images/BG_1.jpg);
+  background: url(/images/BG_1.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #00000069;
+  opacity: 0.8;
+  background-blend-mode: multiply;
 }
 
 .center-content {
