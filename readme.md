@@ -1,4 +1,4 @@
-# GiordiFungula_CV
+# Portfolio Page
 Working on my CV page
 Thanks I will be updating my Website frequently.
 
@@ -10,6 +10,8 @@ Thanks I will be updating my Website frequently.
 ## Technologies used
  - HTML
  - CSS
+ - RWD
+ - Javascript 
 ## link to live site :
 The link to my Page online is https://giordifungula.github.io/GiordiFungula_CV/ 
 
