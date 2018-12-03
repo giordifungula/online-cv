@@ -44,8 +44,7 @@ img {
 }
 #myTopNav {
     float: left;
-
-    
+    // 
 }
 
 // logo styles
@@ -124,7 +123,7 @@ main {
 }
 /* ############### Header file ############## */
 .backGround {
-    height: 71vh;
+    height: 70vh;
     text-align: center;
     background: url(/images/BG_1.jpg);
     background-repeat: no-repeat;
@@ -133,15 +132,21 @@ main {
     background-color: #00000069;
     opacity: 0.8;
     background-blend-mode: multiply;
+    display: flex;
+    // Flex the main container to center the content
+    
     // landing page background link from online 
 }
 .center-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
+    // position: absolute;
+    // top: 50%;
+    // left: 50%;
     // centers the content inside div
-    transform: translate(-50%, -50%);
+    // transform: translate(-50%, -50%);
     /* center Content in middle */
+    flex: 1 1 0;
+    align-content: center;
+    align-self: center;
     font-size: 32px;
      color: #ccc;
 }
@@ -457,7 +462,7 @@ figure {
 }
 @media screen and(min-width: 768px) {
     .backGround {
-       height: 100vh;
+    //    height: 100vh;
     }
     .top-nav {
         // background: #449DD1;

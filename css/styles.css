@@ -109,7 +109,7 @@ nav ul li {
 
 /* ############### Header file ############## */
 .backGround {
-  height: 71vh;
+  height: 70vh;
   text-align: center;
   background: url(/images/BG_1.jpg);
   background-repeat: no-repeat;
@@ -117,14 +117,14 @@ nav ul li {
   background-position: center;
   background-color: #00000069;
   opacity: 0.8;
-  background-blend-mode: multiply; }
+  background-blend-mode: multiply;
+  display: flex; }
 
 .center-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   /* center Content in middle */
+  flex: 1 1 0;
+  align-content: center;
+  align-self: center;
   font-size: 32px;
   color: #ccc; }
 
@@ -359,8 +359,5 @@ label {
   .work-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr); } }
-@media screen and (min-width: 768px) {
-  .backGround {
-    height: 100vh; } }
 
 /*# sourceMappingURL=styles.css.map */
