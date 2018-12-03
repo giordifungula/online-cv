@@ -37,7 +37,6 @@ img {
   float: right;
   padding: 9px; }
 
-/* Colums */
 .col-1 {
   width: 8.33%; }
 
@@ -90,7 +89,7 @@ img {
 
 header {
   background: #000000;
-  height: 70px; }
+  padding: 10px; }
 
 .top-nav a:hover {
   background: #fff; }
@@ -106,6 +105,11 @@ header {
 nav ul li {
   display: inline;
   text-anchor: none; }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%; }
 
 /* ############### Header file ############## */
 .backGround {
@@ -225,11 +229,12 @@ h2 {
   /* Intro about myself styles */ }
 
 .about {
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
+  padding: 16px;
   /* Want to add a background image or color */
   background: #eee; }
+
+.about + .sticky {
+  padding-top: 120px; }
 
 /* ################ Projects Section    ############### */
 @keyframes slideIn {
