@@ -129,6 +129,11 @@ main {
     top: 0;
     width: 100%;
   }
+  .about + .sticky {
+    padding-top: 120px;
+    // 120px added when scrolled
+}
+
 
   
 /* ############### Header file ############## */
@@ -280,10 +285,6 @@ main {
     padding: 16px;
     /* Want to add a background image or color */
     background: #eee;
-}
-.about + .sticky {
-    padding-top: 120px;
-    // 120px added when scrolled
 }
 
 /* ################ Projects Section    ############### */

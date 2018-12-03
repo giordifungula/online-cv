@@ -111,6 +111,9 @@ nav ul li {
   top: 0;
   width: 100%; }
 
+.about + .sticky {
+  padding-top: 120px; }
+
 /* ############### Header file ############## */
 .backGround {
   height: 70vh;
@@ -232,9 +235,6 @@ h2 {
   padding: 16px;
   /* Want to add a background image or color */
   background: #eee; }
-
-.about + .sticky {
-  padding-top: 120px; }
 
 /* ################ Projects Section    ############### */
 @keyframes slideIn {
