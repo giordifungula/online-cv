@@ -37,6 +37,13 @@ img {
   float: right;
   padding: 9px; }
 
+i {
+  overflow: hidden;
+  transition: 0.5s;
+  margin: 1em; }
+  i:hover {
+    color: #fff; }
+
 .col-1 {
   width: 8.33%; }
 
