@@ -128,9 +128,10 @@ main {
     position: fixed;
     top: 0;
     width: 100%;
+    transition: 0.5s;
   }
   .about + .sticky {
-    padding-top: 120px;
+    padding-top: 10px;
     // 120px added when scrolled
 }
 
@@ -140,7 +141,7 @@ main {
 .backGround {
     height: 70vh;
     text-align: center;
-    background: url(/images/BG_1.jpg);
+    background: linear-gradient(to right, #1591da, #000000);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -153,21 +154,42 @@ main {
     // landing page background link from online 
 }
 .center-content {
-    // position: absolute;
-    // top: 50%;
-    // left: 50%;
-    // centers the content inside div
-    // transform: translate(-50%, -50%);
     /* center Content in middle */
     flex: 1 1 0;
     align-content: center;
     align-self: center;
-    // centers the content inside the 
-    font-size: 32px;
+    // margin-left: -10%;
+    font-size: 2em;
      color: #ccc;
+     .blank {
+        display: inline-block;
+     }
+     p {
+       animation: typing 10s steps(39) forwards,
+       blink-caret .9s step-end infinite;
+       border-right: 4px solid white;
+       overflow: hidden;
+       white-space: nowrap;
+       animation-iteration-count: infinite;
+     }
+
 }
 
-/* ########### About Section ############# */
+// ============== Animation for Top Content Word ================== //
+@keyframes blink-caret {
+    from,
+    to{ border-color: transparent; }
+    50% { border-color: white };
+}
+@keyframes typing {
+    0%{width: 0%}
+    30%{width: 100%}
+    80%{width: 100%}
+    90%{width: 0%}
+    100%{width: 0%}
+}
+
+/*  ########### About Section ############# */
  h2 {
      text-align: center;
      margin: 50px 0;
@@ -175,7 +197,7 @@ main {
      font-size: 40px;
      font-family: 'Courier New', Courier, monospace;
      transition: 1s;
-     text-decoration:underline;
+     text-decoration: underline;
      &:hover{
      text-decoration:underline $light-blue;
      } 
@@ -282,7 +304,7 @@ main {
     /* Intro about myself styles */
 }
 .about {
-    padding: 16px;
+    padding: -16px;
     /* Want to add a background image or color */
     background: #eee;
 }
