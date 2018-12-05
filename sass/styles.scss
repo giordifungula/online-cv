@@ -206,13 +206,21 @@ main {
             align-items: center;
             width: 20px;
             height: 20px;
-            border-bottom: 2px solid rgb(5, 5, 5);
-            border-right: 2px solid #1591da;
+            border-bottom: 2px solid rgb(252, 252, 252);
+            border-right: 2px solid #72bae4;
             transform:  rotate(45deg);
             margin: -1px;
-            animation: animate 3s;
+            animation: animate 4s;
             animation-iteration-count: infinite;
             // overflow: hidden;   
+            &:nth-child(1){
+                animation-delay: -0.2s;
+                transform: rotate(45deg) translate(-20px);
+                // animation delay 
+            }
+            &:nth-child(2){
+                animation-delay: .3s;
+            }
         }
     }
 
