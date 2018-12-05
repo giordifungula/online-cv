@@ -214,11 +214,6 @@ h2 {
   h2:hover {
     text-decoration: underline #449DD1; }
 
-.aboutItem {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 10px; }
-
 .center-icon i {
   font-size: 50px;
   overflow: hidden;

@@ -271,9 +271,9 @@ main {
      } 
  }
 .aboutItem {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 10px;
+    // display: grid;
+    // grid-template-columns: 1fr;
+    // grid-gap: 10px;
 }
 .center-icon i {
     font-size: 50px;
@@ -521,9 +521,6 @@ figure {
 }
 @media screen and (min-width: 601px){
     .aboutItem {
-        // display: grid;
-        // grid-template-columns: repeat(3,1fr);
-        
     }
     .edu-section {
         // grid-template-columns: repeat(3, 1fr);
