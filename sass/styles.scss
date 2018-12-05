@@ -23,7 +23,12 @@ body {
 }
 .container {
     width: 100%;
+    // max-width: 960px;
     // max-width: 1$my-spacing;
+}
+main {
+    // max-width: 1200px;
+    // margin: 0 auto;
 }
 a {
     text-decoration: none;
@@ -139,18 +144,18 @@ main {
   
 /* ############### Header file ############## */
 .backGround {
-    height: 70vh;
+    height: 90vh;
     text-align: center;
-    background: linear-gradient(to right, #1591da, #000000);
+    background: url('/images/BG_1.jpg');
+    background: url('/images/BG_1.jpg'),linear-gradient(to right, #1591da, #990f0f);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-color: #00000069;
     opacity: 0.8;
     background-blend-mode: multiply;
     display: flex;
     // Flex the main container to center the content
-    
+   
     // landing page background link from online 
 }
 .center-content {
@@ -183,10 +188,10 @@ main {
 }
 @keyframes typing {
     0%{width: 0%}
-    30%{width: 100%}
-    80%{width: 100%}
-    90%{width: 0%}
-    100%{width: 0%}
+    30%{width: 56%}
+    80%{width: 10%}
+    90%{width: 80%}
+    100%{width: 100%}
 }
 
 /*  ########### About Section ############# */
@@ -453,12 +458,12 @@ figure {
 }
 @media screen and (min-width: 601px){
     .aboutItem {
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
+        // display: grid;
+        // grid-template-columns: repeat(3,1fr);
         
     }
     .edu-section {
-        grid-template-columns: repeat(3, 1fr);
+        // grid-template-columns: repeat(3, 1fr);
     }
     .intro-img{
         img {
