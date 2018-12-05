@@ -195,11 +195,13 @@ nav ul li {
     width: 100%; } }
 @keyframes animate {
   0% {
-    opacity: 0; }
+    opacity: 0;
+    transform: rotate(45deg) translate(-20px, -20px); }
   50% {
     opacity: 1; }
   100% {
-    opacity: 0; } }
+    opacity: 0;
+    transform: rotate(45deg) translate(15px, 15px); } }
 /*  ########### About Section ############# */
 h2 {
   text-align: center;

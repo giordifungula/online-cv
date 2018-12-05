@@ -244,17 +244,16 @@ main {
 @keyframes animate {
     0%{
         opacity: 0;
-        // transform: translateY(-10px);
-        // transform: translateX(20px)
-        // background: #1591da;
+        transform: rotate(45deg) translate(-20px,-20px);
+
     };
     50%{
         opacity: 1;
         // transform: translateY(10px);
-                
     };
     100%{
-        opacity: 0;        
+        opacity: 0;
+        transform: rotate(45deg) translate(15px, 15px);                
     };
 }
 
