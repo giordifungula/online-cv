@@ -127,12 +127,11 @@ nav ul li {
 .backGround {
   height: 90vh;
   text-align: center;
-  background: url("/images/BG_1.jpg");
-  background: url("/images/BG_1.jpg"), linear-gradient(to right, #1591da, #990f0f);
+  background: url("https://giordifungula.github.io/GiordiFungula_CV/images/BG_1.jpg"), linear-gradient(to right, #1591da, #990f0f);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  opacity: 0.8;
+  opacity: 0.9;
   background-blend-mode: multiply;
   display: flex; }
 
@@ -213,7 +212,7 @@ nav ul li {
   display: inline-flex; }
 
 .intro {
-  font-size: 1.2em;
+  font-size: 1.1em;
   color: #449DD1;
   text-align: left;
   padding: 0;
@@ -229,61 +228,59 @@ h2 {
   h2:hover {
     text-decoration: underline #449DD1; }
 
-.intro-img img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  margin: 0 auto;
-  margin-bottom: 10px;
-  display: block;
-  transition: 1s;
-  /* Styling my image */ }
-.intro-img input {
-  text-align: center;
-  display: block;
-  width: 100px;
-  padding: 20px;
-  border: none;
-  background: #449DD1;
-  font-size: 20px;
-  color: #ccc;
-  font-weight: 400;
-  text-align: center;
-  margin: 0 auto;
-  transition: 0.7s; }
-  .intro-img input:hover {
-    background: #000000;
-    cursor: pointer; }
-
-.img-me:hover {
-  opacity: 0.5;
-  transition: 2s;
-  /* Properties when image is overed over  */ }
-
-.aboutItem {
-  /* create some space from all angles */ }
-
-.edu-section {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 10px; }
-
-.content-main {
-  background: #449DD1;
-  font-size: 1.2em;
-  font-family: 'Courier New', Courier, monospace;
-  padding: 10px;
-  margin: 5px; }
-
-.content-main h3 {
-  color: #ccc;
-  font-size: 1.6em;
-  text-align: left; }
-
-.content-main ul {
-  list-style: none; }
-
-/* ################ Projects Section    ############### */
+.intro-img {
+  /* ################ Projects Section    ############### */
+  /* ################ Skills section ############### */
+  /* Skills section media querie */
+  /* ############## Contact Section ############ */
+  /* ##############  Media Queries ############# */ }
+  .intro-img img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: block;
+    transition: 1s;
+    /* Styling my image */ }
+    .intro-img img:hover {
+      opacity: 0.5; }
+    .intro-img img input {
+      text-align: center;
+      display: block;
+      width: 100px;
+      padding: 20px;
+      border: none;
+      background: #449DD1;
+      font-size: 20px;
+      color: #ccc;
+      font-weight: 400;
+      text-align: center;
+      margin: 0 auto;
+      transition: 0.7s; }
+      .intro-img img input:hover {
+        background: #000000;
+        cursor: pointer; }
+  .intro-img .img-me:hover {
+    opacity: 0.5;
+    transition: 2s;
+    /* Properties when image is overed over  */ }
+  .intro-img .aboutItem {
+    /* create some space from all angles */ }
+  .intro-img .edu-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px; }
+  .intro-img .content-main {
+    background: #449DD1;
+    font-size: 1.2em;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px;
+    margin: 5px; }
+  .intro-img .content-main h3 {
+    color: #ccc;
+    font-size: 1.6em;
+    text-align: left; }
+  .intro-img .content-main ul {
+    list-style: none; }
 @keyframes slideIn {
   0% {
     transform: translateX(-110%); }
@@ -291,118 +288,97 @@ h2 {
     transform: translateX(-70%); }
   80% {
     transform: translateX(10%); } }
-.w-grid {
-  animation-name: slideIn;
-  animation-duration: 4s; }
-
-.work {
-  background: #449DD1; }
-
-figure {
-  margin: 0; }
-
-.work-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 2;
-  grid-gap: 10px; }
-  .work-grid img {
-    width: 100%;
-    margin: 0 auto; }
-
-/* ################ Skills section ############### */
-.skils {
-  background: #eee;
-  margin: 20px; }
-
-.skill-item {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 10px; }
-  .skill-item i {
-    font-size: 50px;
-    text-align: center;
-    margin: auto;
-    overflow: hidden; }
-  .skill-item h5 {
-    color: #449DD1;
-    font-size: 1.2em; }
-  .skill-item p {
-    grid-column: span 2;
-    margin: 10px; }
-
-/* Skills section media querie */
-@media only screen and (max-width: 750px) {
-  main .skill-item {
-    width: 100%;
-    margin-top: 0;
-    padding: 0;
-    background: none; }
-
-  .top-nav {
-    /*width: 0px;  This will slide into the web page  */
-    /* 
-    position: fixed; /* sets to fixed when you scrolll 
-    z-index: 1;  /* pushes this item in front of others  
-     
-    top: 10px;  
-    left: 0;
-    overflow-x: hidden;
-    this overflow hides the content that displays 
-    background: #000000;
-    transition: 0.4s; /* delay when the screen slides in  
-    padding-top: 20px;
-    /* padding top on the sideBar */ } }
-/* ############## Contact Section ############ */
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 16px;
-  border: 1px solid #eee;
-  margin-top: 5px;
-  resize: vertical;
-  margin-left: 15px; }
-
-input[type=submit] {
-  background: #449DD1;
-  padding: 5px 10px;
-  border: none;
-  border-radius: 4px;
-  width: 60px;
-  text-align: center;
-  margin-left: 15px; }
-
-label {
-  margin-left: 15px; }
-
-/* ##############  Media Queries ############# */
-@media screen and (max-width: 750px) {
-  .col-3 {
-    width: 100%;
-    text-align: center;
-    /* display: block; */ }
-
-  /* Header section */
-  .center-content {
-    font-size: 25px; }
-
-  /* Education section styles */
-  /* About me image */
-  .img-me {
-    width: 200px;
-    height: 200px; } }
-@media screen and (min-width: 601px) {
-  .intro-img img {
-    width: 200px;
-    height: 200px; }
-    .intro-img img:hover {
-      opacity: 0.5; }
-  .intro-img input {
-    display: block;
-    margin: 0 auto;
-    width: 200px; }
-
-  .work-grid {
+  .intro-img .w-grid {
+    animation-name: slideIn;
+    animation-duration: 4s; }
+  .intro-img .work {
+    background: #449DD1; }
+  .intro-img figure {
+    margin: 0; }
+  .intro-img .work-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); } }
+    grid-template-columns: 1fr;
+    grid-template-rows: 2;
+    grid-gap: 10px; }
+    .intro-img .work-grid img {
+      width: 100%;
+      margin: 0 auto; }
+  .intro-img .skils {
+    background: #eee;
+    margin: 20px; }
+  .intro-img .skill-item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px; }
+    .intro-img .skill-item i {
+      font-size: 50px;
+      text-align: center;
+      margin: auto;
+      overflow: hidden; }
+    .intro-img .skill-item h5 {
+      color: #449DD1;
+      font-size: 1.2em; }
+    .intro-img .skill-item p {
+      grid-column: span 2;
+      margin: 10px; }
+  @media only screen and (max-width: 750px) {
+    .intro-img main .skill-item {
+      width: 100%;
+      margin-top: 0;
+      padding: 0;
+      background: none; }
+    .intro-img .top-nav {
+      /*width: 0px;  This will slide into the web page  */
+      /* 
+      position: fixed; /* sets to fixed when you scrolll 
+      z-index: 1;  /* pushes this item in front of others  
+       
+      top: 10px;  
+      left: 0;
+      overflow-x: hidden;
+      this overflow hides the content that displays 
+      background: #000000;
+      transition: 0.4s; /* delay when the screen slides in  
+      padding-top: 20px;
+      /* padding top on the sideBar */ } }
+  .intro-img input[type=text], .intro-img select, .intro-img textarea {
+    width: 100%;
+    padding: 16px;
+    border: 1px solid #eee;
+    margin-top: 5px;
+    resize: vertical;
+    margin-left: 15px; }
+  .intro-img input[type=submit] {
+    background: #449DD1;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    width: 60px;
+    text-align: center;
+    margin-left: 15px; }
+  .intro-img label {
+    margin-left: 15px; }
+  @media screen and (max-width: 750px) {
+    .intro-img {
+      /* Header section */
+      /* Education section styles */
+      /* About me image */ }
+      .intro-img .col-3 {
+        width: 100%;
+        text-align: center;
+        /* display: block; */ }
+      .intro-img .center-content {
+        font-size: 25px; }
+      .intro-img .img-me {
+        width: 200px;
+        height: 200px; } }
+  @media screen and (min-width: 601px) {
+    .intro-img input {
+      display: block;
+      margin: 0 auto;
+      width: 200px; } }
+  .intro-img .work-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); }
 
 /*# sourceMappingURL=styles.css.map */

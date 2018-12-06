@@ -159,12 +159,12 @@ main {
 .backGround {
     height: 90vh;
     text-align: center;
-    background: url('/images/BG_1.jpg');
-    background: url('/images/BG_1.jpg'),linear-gradient(to right, #1591da, #990f0f);
+    // background: url('/images/BG_1.jpg');
+    background: url('https://giordifungula.github.io/GiordiFungula_CV/images/BG_1.jpg'),linear-gradient(to right, #1591da, #990f0f);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    opacity: 0.8;
+    opacity: 0.9;
     background-blend-mode: multiply;
     display: flex;
     // Flex the main container to center the content
@@ -272,7 +272,7 @@ main {
 }
 
 .intro {
-    font-size: 1.2em;
+    font-size: 1.1em;
     // text-indent: -2%;
     color: $light-blue;
     // padding: 20px;
@@ -280,7 +280,7 @@ main {
     padding: 0;
     /* Intro about myself styles */
 }
-
+// ===== Heading Sections
  h2 {
      text-align: left;
      margin: 0;
@@ -295,39 +295,21 @@ main {
 .aboutItem {
     
 }
-.center-icon i {
-    // font-size: 50px;
-    // overflow: hidden;
-    // text-align: center;
-    // display: block;
-    // margin: 2px auto;
-}
-.intro-logo{
-    // i {
-    // font-size: 100px;
-    // overflow: hidden;
-    // }
-    // text-align: center;
-    // // display: block;
-    // // color:$light-blue;
-    // h3 {
-    //     font-weight: 300;
-    // }
-}
 
 .intro-img {
     img {
-        width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin: 0 auto;
-    margin-bottom: 10px;
-    // some space on the mobile view
+        width: $my-spacing;
+        height: $my-spacing;
+        border-radius: 50%;
+
+        &:hover {
+            opacity: 0.5;
+        }
     display: block;
     // margin: 0 auto;
     transition: 1s;
     /* Styling my image */
-    }
+    
     input{
         text-align: center;
         display: block;
@@ -532,16 +514,6 @@ figure {
     .edu-section {
         // grid-template-columns: repeat(3, 1fr);
     }
-    .intro-img{
-        img {
-            width: $my-spacing;
-            height: $my-spacing;
-
-            &:hover {
-                opacity: 0.5;
-            }
-            
-        }
         input {
             display: block;
             margin: 0 auto;
@@ -571,6 +543,7 @@ figure {
 @media screen and(min-width: 768px) {
     .backGround {
     //    height: 100vh;
+
     }
     .top-nav {
         // background: #449DD1;
