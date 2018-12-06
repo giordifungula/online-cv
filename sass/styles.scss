@@ -1,5 +1,8 @@
+// ============= Font ========================
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
 // ========================= variables  =================== //
+
 
 $light-blue: #449DD1;
 $my-spacing: 200px;
@@ -19,7 +22,8 @@ body {
     overflow-x: hidden;
 
     /* remove custom margin */
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Roboto', cursive;
+
 }
 .container {
     width: 100%;
@@ -145,7 +149,7 @@ main {
     transition: 0.5s;
   }
   .about + .sticky {
-    padding-top: 10px;
+    padding-top: 3em;
     // 120px added when scrolled
 }
 
@@ -258,10 +262,28 @@ main {
 }
 
 /*  ########### About Section ############# */
+.about {
+    padding: 3.5em;
+    /* Want to add a background image or color */
+    background: #eaeef0;
+}
+.heading {
+    display: inline-flex;
+}
+
+.intro {
+    font-size: 1.2em;
+    // text-indent: -2%;
+    color: $light-blue;
+    // padding: 20px;
+    text-align: left;
+    padding: 0;
+    /* Intro about myself styles */
+}
+
  h2 {
-     text-align: center;
-     margin: 50px 0;
-     margin-bottom: 30px;
+     text-align: left;
+     margin: 0;
      font-size: 40px;
      font-family: 'Courier New', Courier, monospace;
      transition: 1s;
@@ -271,28 +293,26 @@ main {
      } 
  }
 .aboutItem {
-    // display: grid;
-    // grid-template-columns: 1fr;
-    // grid-gap: 10px;
+    
 }
 .center-icon i {
-    font-size: 50px;
-    overflow: hidden;
-    text-align: center;
-    display: block;
-    margin: 2px auto;
+    // font-size: 50px;
+    // overflow: hidden;
+    // text-align: center;
+    // display: block;
+    // margin: 2px auto;
 }
 .intro-logo{
-    i {
-    font-size: 100px;
-    overflow: hidden;
-    }
-    text-align: center;
-    // display: block;
-    // color:$light-blue;
-    h3 {
-        font-weight: 300;
-    }
+    // i {
+    // font-size: 100px;
+    // overflow: hidden;
+    // }
+    // text-align: center;
+    // // display: block;
+    // // color:$light-blue;
+    // h3 {
+    //     font-weight: 300;
+    // }
 }
 
 .intro-img {
@@ -336,8 +356,7 @@ main {
 }
 
 .aboutItem {
-    margin: 1%;
-    padding:1%; 
+    
     /* create some space from all angles */
 }
 // education section
@@ -363,19 +382,7 @@ main {
     list-style: none;
 }
 
-.intro {
-    font-size: 1.2em;
-    text-indent: 2%;
-    color:$light-blue;
-    padding: 20px;
-    text-align: center;
-    /* Intro about myself styles */
-}
-.about {
-    padding: -16px;
-    /* Want to add a background image or color */
-    background: #eee;
-}
+
 
 /* ################ Projects Section    ############### */
 // Animations

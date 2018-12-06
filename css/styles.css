@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
 * {
   box-sizing: border-box;
   overflow-x: hidden; }
@@ -10,7 +11,7 @@ body {
   padding: 0;
   overflow-x: hidden;
   /* remove custom margin */
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+  font-family: 'Roboto', cursive; }
 
 .container {
   width: 100%; }
@@ -120,7 +121,7 @@ nav ul li {
   transition: 0.5s; }
 
 .about + .sticky {
-  padding-top: 10px; }
+  padding-top: 3em; }
 
 /* ############### Header file ############## */
 .backGround {
@@ -203,31 +204,30 @@ nav ul li {
     opacity: 0;
     transform: rotate(45deg) translate(15px, 15px); } }
 /*  ########### About Section ############# */
+.about {
+  padding: 3.5em;
+  /* Want to add a background image or color */
+  background: #eaeef0; }
+
+.heading {
+  display: inline-flex; }
+
+.intro {
+  font-size: 1.2em;
+  color: #449DD1;
+  text-align: left;
+  padding: 0;
+  /* Intro about myself styles */ }
+
 h2 {
-  text-align: center;
-  margin: 50px 0;
-  margin-bottom: 30px;
+  text-align: left;
+  margin: 0;
   font-size: 40px;
   font-family: 'Courier New', Courier, monospace;
   transition: 1s;
   text-decoration: underline; }
   h2:hover {
     text-decoration: underline #449DD1; }
-
-.center-icon i {
-  font-size: 50px;
-  overflow: hidden;
-  text-align: center;
-  display: block;
-  margin: 2px auto; }
-
-.intro-logo {
-  text-align: center; }
-  .intro-logo i {
-    font-size: 100px;
-    overflow: hidden; }
-  .intro-logo h3 {
-    font-weight: 300; }
 
 .intro-img img {
   width: 100px;
@@ -261,8 +261,6 @@ h2 {
   /* Properties when image is overed over  */ }
 
 .aboutItem {
-  margin: 1%;
-  padding: 1%;
   /* create some space from all angles */ }
 
 .edu-section {
@@ -284,19 +282,6 @@ h2 {
 
 .content-main ul {
   list-style: none; }
-
-.intro {
-  font-size: 1.2em;
-  text-indent: 2%;
-  color: #449DD1;
-  padding: 20px;
-  text-align: center;
-  /* Intro about myself styles */ }
-
-.about {
-  padding: -16px;
-  /* Want to add a background image or color */
-  background: #eee; }
 
 /* ################ Projects Section    ############### */
 @keyframes slideIn {
