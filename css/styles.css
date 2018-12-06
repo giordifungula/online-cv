@@ -204,7 +204,7 @@ nav ul li {
     transform: rotate(45deg) translate(15px, 15px); } }
 /*  ########### About Section ############# */
 .about {
-  padding: 3.5em;
+  padding: 2.5em;
   /* Want to add a background image or color */
   background: #eaeef0; }
 
@@ -228,12 +228,14 @@ h2 {
   h2:hover {
     text-decoration: underline #449DD1; }
 
+.aboutItem {
+  display: flex;
+  align-items: center; }
+
 .intro-img {
   /* ################ Projects Section    ############### */
   /* ################ Skills section ############### */
-  /* Skills section media querie */
-  /* ############## Contact Section ############ */
-  /* ##############  Media Queries ############# */ }
+  /* ############## Contact Section ############ */ }
   .intro-img img {
     width: 200px;
     height: 200px;
@@ -321,26 +323,6 @@ h2 {
     .intro-img .skill-item p {
       grid-column: span 2;
       margin: 10px; }
-  @media only screen and (max-width: 750px) {
-    .intro-img main .skill-item {
-      width: 100%;
-      margin-top: 0;
-      padding: 0;
-      background: none; }
-    .intro-img .top-nav {
-      /*width: 0px;  This will slide into the web page  */
-      /* 
-      position: fixed; /* sets to fixed when you scrolll 
-      z-index: 1;  /* pushes this item in front of others  
-       
-      top: 10px;  
-      left: 0;
-      overflow-x: hidden;
-      this overflow hides the content that displays 
-      background: #000000;
-      transition: 0.4s; /* delay when the screen slides in  
-      padding-top: 20px;
-      /* padding top on the sideBar */ } }
   .intro-img input[type=text], .intro-img select, .intro-img textarea {
     width: 100%;
     padding: 16px;
@@ -358,27 +340,28 @@ h2 {
     margin-left: 15px; }
   .intro-img label {
     margin-left: 15px; }
-  @media screen and (max-width: 750px) {
-    .intro-img {
-      /* Header section */
-      /* Education section styles */
-      /* About me image */ }
-      .intro-img .col-3 {
-        width: 100%;
-        text-align: center;
-        /* display: block; */ }
-      .intro-img .center-content {
-        font-size: 25px; }
-      .intro-img .img-me {
-        width: 200px;
-        height: 200px; } }
-  @media screen and (min-width: 601px) {
-    .intro-img input {
-      display: block;
-      margin: 0 auto;
-      width: 200px; } }
-  .intro-img .work-grid {
-    display: grid;
+
+/* ##############  Media Queries ############# */
+/* ============ Mobile Only Resonsive view ================  */
+@media screen and (max-width: 680px) {
+  main .skill-item {
+    width: 100%;
+    margin-top: 0;
+    padding: 0;
+    background: none; }
+
+  .aboutItem {
+    flex-direction: column; } }
+@media (min-width: 601px) {
+  .edu-section {
     grid-template-columns: repeat(3, 1fr); }
+
+  input {
+    display: block;
+    margin: 0 auto;
+    width: 200px; } }
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); }
 
 /*# sourceMappingURL=styles.css.map */
