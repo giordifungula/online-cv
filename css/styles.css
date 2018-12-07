@@ -38,6 +38,23 @@ img {
   float: right;
   padding: 9px; }
 
+button {
+  text-align: center;
+  display: block;
+  margin: 12em;
+  padding: 20px;
+  border: none;
+  background: #449DD1;
+  font-size: 20px;
+  color: #ccc;
+  font-weight: 400;
+  text-align: center;
+  margin: 0 auto;
+  transition: 0.7s; }
+  button:hover {
+    background: #000000;
+    cursor: pointer; }
+
 i {
   overflow: hidden;
   transition: 0.5s;
@@ -204,19 +221,13 @@ nav ul li {
     transform: rotate(45deg) translate(15px, 15px); } }
 /*  ########### About Section ############# */
 .about {
-  padding: 2.5em;
+  padding: 2em;
   /* Want to add a background image or color */
   background: #eaeef0; }
 
 .heading {
-  display: inline-flex; }
-
-.intro {
-  font-size: 1.1em;
-  color: #449DD1;
-  text-align: left;
-  padding: 0;
-  /* Intro about myself styles */ }
+  display: inline-flex;
+  text-align: left; }
 
 h2 {
   text-align: left;
@@ -230,41 +241,28 @@ h2 {
 
 .aboutItem {
   display: flex;
-  align-items: center; }
+  align-items: center;
+  align-content: center; }
+  .aboutItem .intro {
+    font-size: 1.1em;
+    color: #449DD1;
+    text-align: left;
+    padding: 0;
+    /* Intro about myself styles */
+    flex: 0.9; }
 
 .intro-img {
   /* ################ Projects Section    ############### */
   /* ################ Skills section ############### */
   /* ############## Contact Section ############ */ }
   .intro-img img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
+    width: 150px;
+    height: 150px;
     display: block;
     transition: 1s;
     /* Styling my image */ }
     .intro-img img:hover {
       opacity: 0.5; }
-    .intro-img img input {
-      text-align: center;
-      display: block;
-      width: 100px;
-      padding: 20px;
-      border: none;
-      background: #449DD1;
-      font-size: 20px;
-      color: #ccc;
-      font-weight: 400;
-      text-align: center;
-      margin: 0 auto;
-      transition: 0.7s; }
-      .intro-img img input:hover {
-        background: #000000;
-        cursor: pointer; }
-  .intro-img .img-me:hover {
-    opacity: 0.5;
-    transition: 2s;
-    /* Properties when image is overed over  */ }
   .intro-img .aboutItem {
     /* create some space from all angles */ }
   .intro-img .edu-section {
@@ -305,24 +303,8 @@ h2 {
     .intro-img .work-grid img {
       width: 100%;
       margin: 0 auto; }
-  .intro-img .skils {
-    background: #eee;
-    margin: 20px; }
-  .intro-img .skill-item {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px; }
-    .intro-img .skill-item i {
-      font-size: 50px;
-      text-align: center;
-      margin: auto;
-      overflow: hidden; }
-    .intro-img .skill-item h5 {
-      color: #449DD1;
-      font-size: 1.2em; }
-    .intro-img .skill-item p {
-      grid-column: span 2;
-      margin: 10px; }
+  .intro-img .SkillSec {
+    display: none; }
   .intro-img input[type=text], .intro-img select, .intro-img textarea {
     width: 100%;
     padding: 16px;
