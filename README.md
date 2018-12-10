@@ -10,8 +10,8 @@ Thanks I will be updating my Website frequently.
 ## Technologies used
  - HTML
  - CSS
- -Javascript
+ - Javascript
 ## link to live site :
-The link to my Page online is https://giordifungula.github.io/GiordiFungula_CV/ 
+The link to my Page online is https://giordifungula.github.io/online-cv/
 
 Giordi Fungula
