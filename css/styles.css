@@ -38,72 +38,12 @@ img {
   float: right;
   padding: 9px; }
 
-button {
-  text-align: center;
-  display: block;
-  margin: 12em;
-  padding: 20px;
-  border: none;
-  background: #449DD1;
-  font-size: 20px;
-  color: #ccc;
-  font-weight: 400;
-  text-align: center;
-  margin: 0 auto;
-  transition: 0.7s; }
-  button:hover {
-    background: #000000;
-    cursor: pointer; }
-
 i {
   overflow: hidden;
   transition: 0.5s;
   margin: 1em; }
   i:hover {
     color: #fff; }
-
-.col-1 {
-  width: 8.33%; }
-
-.col-2 {
-  width: 16.66%; }
-
-.col-3 {
-  width: 25%; }
-
-.col-4 {
-  width: 33.33%; }
-
-.col-5 {
-  width: 41.66%; }
-
-.col-6 {
-  width: 50%; }
-
-.col-7 {
-  width: 58.33%; }
-
-.col-8 {
-  width: 66.66%; }
-
-.col-9 {
-  width: 75%; }
-
-.col-10 {
-  width: 83.33%; }
-
-.col-11 {
-  width: 91.66%; }
-
-.col-12 {
-  width: 100%; }
-
-.row {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  /* center the content in a row */ }
 
 /* ########## Nav bar ########## */
 .top-nav {
@@ -118,14 +58,6 @@ header {
 
 .top-nav a:hover {
   background: #fff; }
-
-.top-nav .closebtn {
-  /* the corner X button */
-  position: absolute;
-  top: 0;
-  right: 15px;
-  font-size: 36px;
-  margin-left: 10px; }
 
 nav ul li {
   display: inline;
@@ -322,6 +254,23 @@ h2 {
     margin-left: 15px; }
   .intro-img label {
     margin-left: 15px; }
+
+button {
+  text-align: center;
+  display: block;
+  margin: 12em;
+  padding: 20px;
+  border: none;
+  background: #449DD1;
+  font-size: 20px;
+  color: #ccc;
+  font-weight: 400;
+  text-align: center;
+  margin: 0 auto;
+  transition: 0.7s; }
+  button:hover {
+    background: #000000;
+    cursor: pointer; }
 
 /* ##############  Media Queries ############# */
 /* ============ Mobile Only Resonsive view ================  */

@@ -1,0 +1,19 @@
+button{
+    text-align: center;
+    display: block;
+    margin: 12em;
+    // width: 200px;
+    padding: 20px;
+    border: none;
+    background: $light-blue;
+    font-size: 20px;
+    color: #ccc;
+    font-weight: 400;
+    text-align: center;
+    margin:0 auto;
+    transition: 0.7s;
+    &:hover {
+        background: #000000;
+        cursor: pointer;
+    }
+}

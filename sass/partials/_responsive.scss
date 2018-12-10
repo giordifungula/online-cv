@@ -1,0 +1,94 @@
+/* ##############  Media Queries ############# */
+// @media screen and (max-height: 650px) {
+//     .top-nav {padding-top: 10px;}
+//     .top-nav a {font-size: 18px;}
+//   }
+
+/* ============ Mobile Only Resonsive view ================  */
+@media screen and (max-width: 680px){
+    main .skill-item   {
+        width: 100%;
+        margin-top: 0;
+        padding: 0;
+        background: none;
+    }
+
+    .aboutItem {
+        flex-direction: column;
+        // view about items as columns on mobile screen
+    }
+}
+@media screen and (max-width: 750px) {
+    // .col-3 {
+    // width: 100%;
+    // text-align: center;
+    // /* display: block; */
+    // }
+    // /* Header section */
+    // .center-content {
+    //     font-size: 25px;
+    // }
+    // /* Education section styles */
+   
+    // /* About me image */
+    // .img-me {
+    //     width: $my-spacing;
+    //     height: $my-spacing;
+    // }
+    header {
+        // background: red;
+    }
+}
+@media (min-width: 601px){
+    .aboutItem {
+        // display: none;
+    }
+    .edu-section {
+        grid-template-columns: repeat(3, 1fr);
+    }
+        input {
+            display: block;
+            margin: 0 auto;
+            // display: block;
+            width: $my-spacing;
+        }
+        
+    }
+    .work-grid {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        // grid-template-rows: auto-fit(4,1fr);
+
+        .w-grid1 {
+            // grid-column: span 2;
+        }
+        .w-grid2 {
+            // background: #583d3d;
+            // grid-row: 1 /span 1;
+
+        }
+        .w-grid3 {
+            // grid-row: 2/span 1;
+        }
+    }
+
+@media screen and(min-width: 768px) {
+    .backGround {
+    //    height: 100vh;
+    }
+    .top-nav {
+        // background: #449DD1;
+        // height: 100px;
+    }
+    // .top-nav a {
+    //     /* Styles for the list */
+    //     padding: 5px 5px 5px 5px;
+    //     text-decoration: none;
+    //     font-size: 26px;
+    //     color:$light-blue;
+    //     display: block;
+    //     transition: 0.3s;
+    //     text-align: left;
+    //     text-transform: uppercase;
+    // }
+}
