@@ -63,6 +63,23 @@ nav ul li {
   display: inline;
   text-anchor: none; }
 
+button {
+  text-align: center;
+  display: block;
+  margin: 12em;
+  padding: 20px;
+  border: none;
+  background: #449DD1;
+  font-size: 20px;
+  color: #ccc;
+  font-weight: 400;
+  text-align: center;
+  margin: 0 auto;
+  transition: 0.7s; }
+  button:hover {
+    background: #000000;
+    cursor: pointer; }
+
 .sticky {
   position: fixed;
   top: 0;
@@ -222,6 +239,7 @@ h2 {
     transform: translateX(10%); } }
   .intro-img .w-grid {
     animation-name: slideIn;
+    background: #990f0f;
     animation-duration: 4s; }
   .intro-img .work {
     background: #449DD1; }
@@ -235,7 +253,9 @@ h2 {
     .intro-img .work-grid img {
       width: 100%;
       margin: 0 auto; }
-  .intro-img .SkillSec {
+  .intro-img #skills {
+    background: #1591da; }
+  .intro-img .work {
     display: none; }
   .intro-img input[type=text], .intro-img select, .intro-img textarea {
     width: 100%;
@@ -254,23 +274,6 @@ h2 {
     margin-left: 15px; }
   .intro-img label {
     margin-left: 15px; }
-
-button {
-  text-align: center;
-  display: block;
-  margin: 12em;
-  padding: 20px;
-  border: none;
-  background: #449DD1;
-  font-size: 20px;
-  color: #ccc;
-  font-weight: 400;
-  text-align: center;
-  margin: 0 auto;
-  transition: 0.7s; }
-  button:hover {
-    background: #000000;
-    cursor: pointer; }
 
 /* ##############  Media Queries ############# */
 /* ============ Mobile Only Resonsive view ================  */
