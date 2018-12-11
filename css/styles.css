@@ -248,7 +248,13 @@ h2 {
 /* ################ Education Section ############### */
 .education {
   padding: 2em;
-  background: linear-gradient(to left, lightcoral, lightblue); }
+  background: linear-gradient(to left, lightcoral, lightblue);
+  position: relative;
+  height: 100%; }
+
+.work-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); }
 
 /* ##############  Media Queries ############# */
 /* ============ Mobile Only Resonsive view ================  */

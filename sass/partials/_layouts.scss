@@ -234,7 +234,8 @@ main {
   // ======= SKills Section ======== //
   .skills {
     padding: 2.5em;
-    // ===== skills container ==== //       
+    // ===== skills container ==== //   
+
     .skill-icons {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -269,9 +270,15 @@ main {
     // display: none;
     padding: 2em;
     background: linear-gradient(to left, lightcoral, lightblue);
+    position: relative;
+    height: 100%;
     .edu-content {
         // background: #1591da;
     }
 }
 
-
+// ============= Work Experience Section =============== 
+.work-content {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
