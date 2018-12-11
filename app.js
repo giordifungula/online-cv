@@ -18,6 +18,5 @@ function Sticky() {
     header.style.opacity = '1';
     header.style.background = '#111';
     // if its scrolled back remove the class and the opacity
-    
   }
 }

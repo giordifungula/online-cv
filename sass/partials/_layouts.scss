@@ -166,16 +166,6 @@ main {
     padding: 2em;
     /* Want to add a background image or color */
     background: #eaeef0;
-
-    // ======= SKills Section ======== //
-    .skills {
-        background: linear-gradient(to left, lightcoral, lightblue);
-
-        .skill-icons {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-        }
-    }
 }
 .heading {
     display: inline-flex;
@@ -239,58 +229,45 @@ main {
     /* Styling my image */
     
   
+    }
+}
+  // ======= SKills Section ======== //
+  .skills {
+    padding: 2.5em;
+    // ===== skills container ==== //       
+    .skill-icons {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    
+    // ===== skill Items =======     
+    .skill-item {
+        font-size: 3em;
+        border: 1px solid #eee;
+        text-align: center;
+    &:hover {
+        border: 1.2px solid #eee;
+    }
+        i {
+            &:hover {
+                transform: scaleX(10deg);
+                // color: #000000;
+                
+              }
+        }
+        
+        }
+    }
+
 }
 
 /* ################ Education Section ############### */
 .education {
     // display: none;
     padding: 2em;
-
+    background: linear-gradient(to left, lightcoral, lightblue);
     .edu-content {
-        background: #1591da;
+        // background: #1591da;
     }
 }
 
 
-/* ################ Projects Section    ############### */
-// Animations
-@keyframes slideIn {
-    0% {
-        transform: translateX(-110%);
-    }
-    50% {
-        transform : translateX(-70%);
-    }
-    80% {
-        transform : translateX(10%);
-    }
-}
-.w-grid {
-    // position: absolute;
-   animation-name: slideIn;
-   animation-duration: 4s;
-//    animation: ease-in;
-}
-.work {
-    background:$light-blue;
-    // adds a background of light blue
-}
-figure {
-    margin: 0;
-    // removes default spacing on tag
-}
-.work-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 2;
-    grid-gap: 10px;
-    
-    img {
-        width: 100%;
-        margin: 0 auto;
-        // makes image 100% of screen and centers
-    }
-    
-}
-
-}

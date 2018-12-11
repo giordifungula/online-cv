@@ -43,7 +43,7 @@ i {
   transition: 0.5s;
   margin: 1em; }
   i:hover {
-    color: #fff; }
+    opacity: 0.5; }
 
 /* ########## Nav bar ########## */
 .top-nav {
@@ -194,11 +194,6 @@ nav ul li {
   padding: 2em;
   /* Want to add a background image or color */
   background: #eaeef0; }
-  .about .skills {
-    background: linear-gradient(to left, lightcoral, lightblue); }
-    .about .skills .skill-icons {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); }
 
 .heading {
   display: inline-flex;
@@ -226,43 +221,33 @@ h2 {
     /* Intro about myself styles */
     flex: 0.9; }
 
-.intro-img {
-  /* ################ Education Section ############### */
-  /* ################ Projects Section    ############### */ }
-  .intro-img img {
-    width: 150px;
-    height: 150px;
-    display: block;
-    transition: 1s;
-    /* Styling my image */ }
-    .intro-img img:hover {
-      opacity: 0.5; }
-  .intro-img .education {
-    padding: 2em; }
-    .intro-img .education .edu-content {
-      background: #1591da; }
-@keyframes slideIn {
-  0% {
-    transform: translateX(-110%); }
-  50% {
-    transform: translateX(-70%); }
-  80% {
-    transform: translateX(10%); } }
-  .intro-img .w-grid {
-    animation-name: slideIn;
-    animation-duration: 4s; }
-  .intro-img .work {
-    background: #449DD1; }
-  .intro-img figure {
-    margin: 0; }
-  .intro-img .work-grid {
+.intro-img img {
+  width: 150px;
+  height: 150px;
+  display: block;
+  transition: 1s;
+  /* Styling my image */ }
+  .intro-img img:hover {
+    opacity: 0.5; }
+
+.skills {
+  padding: 2.5em; }
+  .skills .skill-icons {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 2;
-    grid-gap: 10px; }
-    .intro-img .work-grid img {
-      width: 100%;
-      margin: 0 auto; }
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); }
+    .skills .skill-icons .skill-item {
+      font-size: 3em;
+      border: 1px solid #eee;
+      text-align: center; }
+      .skills .skill-icons .skill-item:hover {
+        border: 1.2px solid #eee; }
+      .skills .skill-icons .skill-item i:hover {
+        transform: scaleX(10deg); }
+
+/* ################ Education Section ############### */
+.education {
+  padding: 2em;
+  background: linear-gradient(to left, lightcoral, lightblue); }
 
 /* ##############  Media Queries ############# */
 /* ============ Mobile Only Resonsive view ================  */
