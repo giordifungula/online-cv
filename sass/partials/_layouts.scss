@@ -244,14 +244,18 @@ main {
         font-size: 3em;
         border: 1px solid #eee;
         text-align: center;
-    &:hover {
-        border: 1.2px solid #eee;
-    }
+
+        &:hover {
+            // ==== Hover over box
+            border: 1.2px solid #eee;
+            box-shadow: 2px;
+            
+        }
+
         i {
             &:hover {
                 transform: scaleX(10deg);
-                // color: #000000;
-                
+                // color: #000000;     
               }
         }
         

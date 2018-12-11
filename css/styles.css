@@ -240,7 +240,8 @@ h2 {
       border: 1px solid #eee;
       text-align: center; }
       .skills .skill-icons .skill-item:hover {
-        border: 1.2px solid #eee; }
+        border: 1.2px solid #eee;
+        box-shadow: 2px; }
       .skills .skill-icons .skill-item i:hover {
         transform: scaleX(10deg); }
 
