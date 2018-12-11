@@ -1,3 +1,45 @@
+/* ########## Nav bar ########## */
+
+.top-nav{
+    transition: 0.9s;
+    overflow: hidden;
+
+    a {
+        padding: 0 10px;
+        // spacing around links
+    }
+    // display: inline;
+    li {
+    // display: inline;
+
+    }
+}
+
+header {
+    background: #000000;
+    padding: 10px;
+}
+
+.top-nav a:hover {
+    background:#fff;
+}
+.top-nav .closebtn {
+    /* the corner X button */
+    position: absolute;
+    top:0;
+    right: 15px;
+    font-size: 36px;
+    margin-left: 10px;
+}
+
+nav ul li{
+    display: inline;
+    text-anchor: none;
+}
+
+main {
+    
+}
 // ===== Navigation Sticky Mode ====== //
 
 .sticky {
@@ -47,7 +89,7 @@
        border-right: 4px solid white;
        overflow: hidden;
        white-space: nowrap;
-       animation-iteration-count: infinite;
+    //    animation-iteration-count: infinite;
      }
 
     //  =========== Arrow Section ===========
@@ -97,10 +139,10 @@
 
 @keyframes typing {
     0%{width: 0%}
-    30%{width: 56%}
-    80%{width: 10%}
-    90%{width: 80%}
-    100%{width: 100%}
+    30%{width: 60%}
+    80%{width: 100%}
+    // 90%{width: 80%}
+    // 100%{width: 100%}
 }
 
 @keyframes animate {
@@ -124,6 +166,16 @@
     padding: 2em;
     /* Want to add a background image or color */
     background: #eaeef0;
+
+    // ======= SKills Section ======== //
+    .skills {
+        background: linear-gradient(to left, lightcoral, lightblue);
+
+        .skill-icons {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        }
+    }
 }
 .heading {
     display: inline-flex;
@@ -189,33 +241,15 @@
   
 }
 
-.aboutItem {
-    
-    /* create some space from all angles */
-}
-// education section
-.edu-section {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 10px;
-}
-.content-main {
-    background: $light-blue;
-    // text-align: center;
-    font-size: 1.2em;
-    font-family: 'Courier New', Courier, monospace;
-    padding:10px;
-    margin: 5px;
-}
-.content-main h3 {
-    color:#ccc;
-    font-size: 1.6em;
-    text-align: left;
-}
-.content-main ul {
-    list-style: none;
-}
+/* ################ Education Section ############### */
+.education {
+    // display: none;
+    padding: 2em;
 
+    .edu-content {
+        background: #1591da;
+    }
+}
 
 
 /* ################ Projects Section    ############### */
@@ -234,12 +268,11 @@
 .w-grid {
     // position: absolute;
    animation-name: slideIn;
-   background: #990f0f;
    animation-duration: 4s;
 //    animation: ease-in;
 }
 .work {
-    background: $light-blue;
+    background:$light-blue;
     // adds a background of light blue
 }
 figure {
@@ -259,36 +292,5 @@ figure {
     }
     
 }
-/* ################ Skills section ############### */
-#skills {
-    background: #1591da;
-}
-.work {
-    display: none;
-}
 
-/* ############## Contact Section ############ */
-    input[type=text], select , textarea {
-        width: 100%;
-        padding: 16px;
-        border: 1px solid #eee;
-        margin-top: 5px;
-        resize: vertical;
-        margin-left: 15px;
-    }
-    #subject {
-        // width: 80%;
-    }
-    input[type=submit] {
-        background: $light-blue;
-        padding: 5px 10px;
-        border:none;
-        border-radius: 4px;
-        width: 60px;
-        text-align: center;
-        margin-left: 15px;
-    }
-    label {
-        margin-left: 15px;
-    }
 }

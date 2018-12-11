@@ -80,6 +80,32 @@ button {
     background: #000000;
     cursor: pointer; }
 
+/* ########## Nav bar ########## */
+.top-nav {
+  transition: 0.9s;
+  overflow: hidden; }
+  .top-nav a {
+    padding: 0 10px; }
+
+header {
+  background: #000000;
+  padding: 10px; }
+
+.top-nav a:hover {
+  background: #fff; }
+
+.top-nav .closebtn {
+  /* the corner X button */
+  position: absolute;
+  top: 0;
+  right: 15px;
+  font-size: 36px;
+  margin-left: 10px; }
+
+nav ul li {
+  display: inline;
+  text-anchor: none; }
+
 .sticky {
   position: fixed;
   top: 0;
@@ -114,8 +140,7 @@ button {
     animation: typing 10s steps(39) forwards, blink-caret 0.9s step-end infinite;
     border-right: 4px solid white;
     overflow: hidden;
-    white-space: nowrap;
-    animation-iteration-count: infinite; }
+    white-space: nowrap; }
   .center-content .arrow-container {
     align-content: center;
     align-items: center;
@@ -152,12 +177,8 @@ button {
   0% {
     width: 0%; }
   30% {
-    width: 56%; }
+    width: 60%; }
   80% {
-    width: 10%; }
-  90% {
-    width: 80%; }
-  100% {
     width: 100%; } }
 @keyframes animate {
   0% {
@@ -173,6 +194,11 @@ button {
   padding: 2em;
   /* Want to add a background image or color */
   background: #eaeef0; }
+  .about .skills {
+    background: linear-gradient(to left, lightcoral, lightblue); }
+    .about .skills .skill-icons {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); }
 
 .heading {
   display: inline-flex;
@@ -201,9 +227,8 @@ h2 {
     flex: 0.9; }
 
 .intro-img {
-  /* ################ Projects Section    ############### */
-  /* ################ Skills section ############### */
-  /* ############## Contact Section ############ */ }
+  /* ################ Education Section ############### */
+  /* ################ Projects Section    ############### */ }
   .intro-img img {
     width: 150px;
     height: 150px;
@@ -212,24 +237,10 @@ h2 {
     /* Styling my image */ }
     .intro-img img:hover {
       opacity: 0.5; }
-  .intro-img .aboutItem {
-    /* create some space from all angles */ }
-  .intro-img .edu-section {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 10px; }
-  .intro-img .content-main {
-    background: #449DD1;
-    font-size: 1.2em;
-    font-family: 'Courier New', Courier, monospace;
-    padding: 10px;
-    margin: 5px; }
-  .intro-img .content-main h3 {
-    color: #ccc;
-    font-size: 1.6em;
-    text-align: left; }
-  .intro-img .content-main ul {
-    list-style: none; }
+  .intro-img .education {
+    padding: 2em; }
+    .intro-img .education .edu-content {
+      background: #1591da; }
 @keyframes slideIn {
   0% {
     transform: translateX(-110%); }
@@ -239,7 +250,6 @@ h2 {
     transform: translateX(10%); } }
   .intro-img .w-grid {
     animation-name: slideIn;
-    background: #990f0f;
     animation-duration: 4s; }
   .intro-img .work {
     background: #449DD1; }
@@ -253,27 +263,6 @@ h2 {
     .intro-img .work-grid img {
       width: 100%;
       margin: 0 auto; }
-  .intro-img #skills {
-    background: #1591da; }
-  .intro-img .work {
-    display: none; }
-  .intro-img input[type=text], .intro-img select, .intro-img textarea {
-    width: 100%;
-    padding: 16px;
-    border: 1px solid #eee;
-    margin-top: 5px;
-    resize: vertical;
-    margin-left: 15px; }
-  .intro-img input[type=submit] {
-    background: #449DD1;
-    padding: 5px 10px;
-    border: none;
-    border-radius: 4px;
-    width: 60px;
-    text-align: center;
-    margin-left: 15px; }
-  .intro-img label {
-    margin-left: 15px; }
 
 /* ##############  Media Queries ############# */
 /* ============ Mobile Only Resonsive view ================  */
