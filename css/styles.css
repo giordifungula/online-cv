@@ -63,6 +63,10 @@ nav ul li {
   display: inline;
   text-anchor: none; }
 
+main {
+  margin: 0 auto;
+  max-width: 1400px; }
+
 button {
   text-align: center;
   display: block;
