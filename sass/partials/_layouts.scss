@@ -165,30 +165,33 @@ main {
 .about {
     padding: 2em;
     /* Want to add a background image or color */
-    background: #eaeef0;
+    // background: #eaeef0;
 }
 .heading {
-    display: inline-flex;
+    // display: block;
+    align-content: center;
     
     // heading and icon display in a row
-    text-align: left;
+    text-align: center;
+    // ===== Heading Sections
+ h2 {
+    text-align: center;
+    margin: 0;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    transition: 1s;
+    text-decoration: underline;
+    &:hover{
+    text-decoration:underline $light-blue;
+    } 
+}
 }
 
 
-// ===== Heading Sections
- h2 {
-     text-align: left;
-     margin: 0;
-     font-size: 40px;
-     font-family: 'Courier New', Courier, monospace;
-     transition: 1s;
-     text-decoration: underline;
-     &:hover{
-     text-decoration:underline $light-blue;
-     } 
- }
+
 .aboutItem {
-    display: flex;
+    // display: inline-flex;
+    text-align: center;
     // align-content: center;
     align-items: center;
     align-content: center;
@@ -198,10 +201,9 @@ main {
     .intro {
         // About item text
         font-size: 1.1em;
-        // text-indent: -2%;
-        color: $light-blue;
-        // padding: 20px;
-        text-align: left;
+        line-height: 1.9;
+        // padding: 0.2em;
+        text-align: center;
         padding: 0;
         /* Intro about myself styles */
         flex: 0.9;
@@ -216,6 +218,7 @@ main {
         
         width: 150px;
         height: 150px;
+        border-radius: 50%;
         // some spacing on desktop around the image
         // border-radius: 30%;
 

@@ -196,31 +196,29 @@ nav ul li {
 /*  ########### About Section ############# */
 .about {
   padding: 2em;
-  /* Want to add a background image or color */
-  background: #eaeef0; }
+  /* Want to add a background image or color */ }
 
 .heading {
-  display: inline-flex;
-  text-align: left; }
-
-h2 {
-  text-align: left;
-  margin: 0;
-  font-size: 40px;
-  font-family: 'Courier New', Courier, monospace;
-  transition: 1s;
-  text-decoration: underline; }
-  h2:hover {
-    text-decoration: underline #449DD1; }
+  align-content: center;
+  text-align: center; }
+  .heading h2 {
+    text-align: center;
+    margin: 0;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    transition: 1s;
+    text-decoration: underline; }
+    .heading h2:hover {
+      text-decoration: underline #449DD1; }
 
 .aboutItem {
-  display: flex;
+  text-align: center;
   align-items: center;
   align-content: center; }
   .aboutItem .intro {
     font-size: 1.1em;
-    color: #449DD1;
-    text-align: left;
+    line-height: 1.9;
+    text-align: center;
     padding: 0;
     /* Intro about myself styles */
     flex: 0.9; }
@@ -228,6 +226,7 @@ h2 {
 .intro-img img {
   width: 150px;
   height: 150px;
+  border-radius: 50%;
   display: block;
   transition: 1s;
   /* Styling my image */ }
