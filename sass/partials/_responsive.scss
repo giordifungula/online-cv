@@ -18,19 +18,17 @@
     header {
         ul {
             display: flex;
-            margin: 0;
+            // margin: 0;
+            // display the list in one line on mobile
         }
     }
-    main .skill-item   {
-        width: 100%;
-        margin-top: 0;
-        padding: 0;
-        background: none;
-    }
-
+    
     .aboutItem {
         flex-direction: column;
         // view about items as columns on mobile screen
+    }
+    .work-grid {
+        grid-template-columns: auto;
     }
 }
 
@@ -48,8 +46,8 @@
         
     }
     .work-grid {
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
+        // display: grid;
+        // grid-template-columns: repeat(3,1fr);
         // grid-template-rows: auto-fit(4,1fr);
 
         .w-grid1 {

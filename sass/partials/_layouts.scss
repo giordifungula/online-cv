@@ -295,3 +295,14 @@ main {
     display: grid;
     grid-template-columns: repeat(4,1fr);
 }
+
+
+// =========== Projects Section ================= //
+.work-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    // width: 250px;
+    margin: 1.5em;
+    grid-gap: 10px;
+    // some grid space around content
+}

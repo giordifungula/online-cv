@@ -260,6 +260,12 @@ nav ul li {
   display: grid;
   grid-template-columns: repeat(4, 1fr); }
 
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 1.5em;
+  grid-gap: 10px; }
+
 /* ##############  Media Queries ############# */
 /* ============ Mobile Only Resonsive view ================  */
 @media screen and (max-width: 680px) {
@@ -270,24 +276,17 @@ nav ul li {
     display: none; }
 
   header ul {
-    display: flex;
-    margin: 0; }
-
-  main .skill-item {
-    width: 100%;
-    margin-top: 0;
-    padding: 0;
-    background: none; }
+    display: flex; }
 
   .aboutItem {
-    flex-direction: column; } }
+    flex-direction: column; }
+
+  .work-grid {
+    grid-template-columns: auto; } }
 @media (min-width: 601px) {
   input {
     display: block;
     margin: 0 auto;
     width: 200px; } }
-.work-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); }
 
 /*# sourceMappingURL=styles.css.map */
