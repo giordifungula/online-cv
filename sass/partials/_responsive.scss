@@ -6,6 +6,21 @@
 
 /* ============ Mobile Only Resonsive view ================  */
 @media screen and (max-width: 680px){
+    // Mobile Fonts
+    .center-content {
+        font-size: 1.5em;
+        // decrease size
+    }
+    .logo{
+        display: none;
+        // hide logo on mobile screen
+    }
+    header {
+        ul {
+            display: flex;
+            margin: 0;
+        }
+    }
     main .skill-item   {
         width: 100%;
         margin-top: 0;
@@ -18,34 +33,12 @@
         // view about items as columns on mobile screen
     }
 }
-@media screen and (max-width: 750px) {
-    // .col-3 {
-    // width: 100%;
-    // text-align: center;
-    // /* display: block; */
-    // }
-    // /* Header section */
-    // .center-content {
-    //     font-size: 25px;
-    // }
-    // /* Education section styles */
-   
-    // /* About me image */
-    // .img-me {
-    //     width: $my-spacing;
-    //     height: $my-spacing;
-    // }
-    header {
-        // background: red;
-    }
-}
+
 @media (min-width: 601px){
     .aboutItem {
         // display: none;
     }
-    .edu-section {
-        grid-template-columns: repeat(3, 1fr);
-    }
+    
         input {
             display: block;
             margin: 0 auto;

@@ -123,7 +123,7 @@ nav ul li {
 .backGround {
   height: 90vh;
   text-align: center;
-  background: url("/images/nikita-kachanovsky-445394-unsplash.jpg"), linear-gradient(to right, #1591da, #990f0f);
+  background: url("/images/bg-laptop.jpg"), linear-gradient(to right, #1591da, #990f0f);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -252,7 +252,7 @@ h2 {
 /* ################ Education Section ############### */
 .education {
   padding: 2em;
-  background: url("/images/nikita-kachanovsky-445394-unsplash.jpg");
+  background: url("/images/bg-laptop.jpg");
   background-size: cover;
   background-attachment: fixed;
   color: #eee; }
@@ -267,6 +267,16 @@ h2 {
 /* ##############  Media Queries ############# */
 /* ============ Mobile Only Resonsive view ================  */
 @media screen and (max-width: 680px) {
+  .center-content {
+    font-size: 1.5em; }
+
+  .logo {
+    display: none; }
+
+  header ul {
+    display: flex;
+    margin: 0; }
+
   main .skill-item {
     width: 100%;
     margin-top: 0;
@@ -276,9 +286,6 @@ h2 {
   .aboutItem {
     flex-direction: column; } }
 @media (min-width: 601px) {
-  .edu-section {
-    grid-template-columns: repeat(3, 1fr); }
-
   input {
     display: block;
     margin: 0 auto;
