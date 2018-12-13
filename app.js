@@ -20,3 +20,8 @@ function Sticky() {
     // if its scrolled back remove the class and the opacity
   }
 }
+
+// Aos Plugin
+AOS.init({
+        duration : 1200,
+    })
