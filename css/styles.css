@@ -123,7 +123,7 @@ nav ul li {
 .backGround {
   height: 90vh;
   text-align: center;
-  background: url("https://giordifungula.github.io/GiordiFungula_CV/images/BG_1.jpg"), linear-gradient(to right, #1591da, #990f0f);
+  background: url("/images/nikita-kachanovsky-445394-unsplash.jpg"), linear-gradient(to right, #1591da, #990f0f);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -252,9 +252,13 @@ h2 {
 /* ################ Education Section ############### */
 .education {
   padding: 2em;
-  background: linear-gradient(to left, lightcoral, lightblue);
-  position: relative;
-  height: 100%; }
+  background: url("/images/nikita-kachanovsky-445394-unsplash.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  color: #eee; }
+  .education .edu-content .edu-item {
+    border: 1px solid black;
+    max-width: 700px; }
 
 .work-content {
   display: grid;
