@@ -49,7 +49,7 @@ main {
     transition: 0.5s;
   }
   .about + .sticky {
-    padding-top: 3em;
+    // padding-bottom: 20em;
     // 120px added when scrolled
 }
 
@@ -163,7 +163,7 @@ main {
 
 /*  ########### About Section ############# */
 .about {
-    padding: 2em;
+    padding-top: 5em;
     /* Want to add a background image or color */
     // background: #eaeef0;
 }
