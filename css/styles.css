@@ -265,6 +265,10 @@ nav ul li {
   grid-template-columns: repeat(3, 1fr);
   margin: 1.5em;
   grid-gap: 10px; }
+  .work-grid img:hover {
+    opacity: 0.5;
+    cursor: pointer;
+    transition: 0.5s; }
 
 /* ##############  Media Queries ############# */
 /* ============ Mobile Only Resonsive view ================  */

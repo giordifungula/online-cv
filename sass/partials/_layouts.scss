@@ -305,4 +305,10 @@ main {
     margin: 1.5em;
     grid-gap: 10px;
     // some grid space around content
+
+    img:hover {
+        opacity: 0.5;
+        cursor: pointer;
+        transition: 0.5s;
+    }
 }
