@@ -26,10 +26,12 @@ body {
     // max-width: 960px;
     // max-width: 1$my-spacing;
 }
+
 main {
-    // max-width: 1200px;
-    // margin: 0 auto;
+    max-width: 1400px;
+    margin: 0 auto;
 }
+
 a {
     text-decoration: none;
     color:#1591da;
@@ -40,13 +42,16 @@ a {
     }
     // styling default links
 }
+
 p {
     font-weight: 500;
 }
+
 img {
     width: 100%;
     // makes image size of full container div
 }
+
 #myTopNav {
     float: left;
     // 
@@ -99,12 +104,6 @@ header {
 nav ul li{
     display: inline;
     text-anchor: none;
-}
-
-main {
-    margin: 0 auto;
-    max-width: 1400px;
-    // max width added to the main section
 }
 
 

@@ -16,6 +16,10 @@ body {
 .container {
   width: 100%; }
 
+main {
+  max-width: 1400px;
+  margin: 0 auto; }
+
 a {
   text-decoration: none;
   color: #1591da;
@@ -62,10 +66,6 @@ header {
 nav ul li {
   display: inline;
   text-anchor: none; }
-
-main {
-  margin: 0 auto;
-  max-width: 1400px; }
 
 button {
   text-align: center;
