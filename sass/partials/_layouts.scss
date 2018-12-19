@@ -171,10 +171,13 @@ main {
 .heading {
     // display: block;
     align-content: center;
-    // padding-top: 3em;
     // heading and icon display in a row
     text-align: center;
     // ===== Heading Sections
+    &:not(first-child){
+    padding-top: 3em;
+
+    }
  h2 {
     text-align: center;
     margin: 0;

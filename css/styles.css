@@ -198,6 +198,8 @@ nav ul li {
 .heading {
   align-content: center;
   text-align: center; }
+  .heading:not(first-child) {
+    padding-top: 3em; }
   .heading h2 {
     text-align: center;
     margin: 0;
