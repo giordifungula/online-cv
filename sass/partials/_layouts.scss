@@ -99,7 +99,8 @@ main {
         align-items: center;
         //  span inside arrow
         display: flex;
-        flex-direction: column;        
+        flex-direction: column;
+
         .arrow {
             overflow: hidden;
             margin: -1px;            
@@ -310,5 +311,21 @@ main {
         opacity: 0.5;
         cursor: pointer;
         transition: 0.5s;
+    }
+}
+
+// ===== Contact Section ===== //
+.contact {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background: #1591da;
+
+    &:after {
+        position: absolute;
+        width: 100%;
+        // height: 100%;
+        content: '';
+        background: inherit;
     }
 }
