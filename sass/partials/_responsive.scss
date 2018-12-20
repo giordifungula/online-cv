@@ -10,6 +10,12 @@
     .center-content {
         font-size: 1.5em;
         // decrease size
+
+        p {
+            animation: none;
+            border: none;
+            // remove animation on mobile
+        }
     }
     .logo{
         display: none;
