@@ -284,6 +284,10 @@ nav ul li {
     background: inherit; }
   .contact .contact-info {
     text-align: center; }
+    .contact .contact-info .contact-icons p {
+      margin: 0; }
+    .contact .contact-info .contact-icons a {
+      color: #000000; }
 
 /* ##############  Media Queries ############# */
 /* ============ Mobile Only Resonsive view ================  */

@@ -340,5 +340,21 @@ main {
     }
     .contact-info {
         text-align: center;
+        
+        .contact-icons {
+            p {
+                margin: 0;
+            }
+            a {
+                color: #000000;
+                // link to email 
+            }
+            
+            i {
+                // align-content: center;
+            // align-items: center;
+            // flex: 1;
+            }
+        }
     }
 }
