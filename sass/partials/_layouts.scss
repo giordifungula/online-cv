@@ -178,19 +178,33 @@ main {
     // ===== Heading Sections
     &:not(first-child){
     padding-top: 3em;
-
     }
- h2 {
-    text-align: center;
-    margin: 0;
-    font-size: 2em;
-    font-family: 'Courier New', Courier, monospace;
-    transition: 1s;
-    text-decoration: underline;
-    &:hover{
-    text-decoration:underline $light-blue;
-    } 
-}
+    // ===== Line and heading === //
+    .head {
+        display: inline-flex;
+        align-content: center;
+        align-items: center;
+        // center work between lines
+    }
+    // == line ==
+    hr {
+        width: 100px;
+        height: 1px;
+        border: 1px solid #000;
+    }
+    h2 {
+        text-align: center;
+        // color:#eee;    
+        margin: 0;
+        font-size: 2em;
+        font-family: 'Courier New', Courier, monospace;
+        transition: 1s;
+        padding: 0.5em;
+    }
+    i {
+        display: block;
+        // display icons in a line
+    }
 }
 
 

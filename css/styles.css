@@ -200,15 +200,23 @@ nav ul li {
   padding-top: 3em; }
   .heading:not(first-child) {
     padding-top: 3em; }
+  .heading .head {
+    display: inline-flex;
+    align-content: center;
+    align-items: center; }
+  .heading hr {
+    width: 100px;
+    height: 1px;
+    border: 1px solid #000; }
   .heading h2 {
     text-align: center;
     margin: 0;
     font-size: 2em;
     font-family: 'Courier New', Courier, monospace;
     transition: 1s;
-    text-decoration: underline; }
-    .heading h2:hover {
-      text-decoration: underline #449DD1; }
+    padding: 0.5em; }
+  .heading i {
+    display: block; }
 
 .aboutItem {
   text-align: center;
