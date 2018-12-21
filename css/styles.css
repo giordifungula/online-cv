@@ -282,13 +282,12 @@ nav ul li {
   height: 400px;
   background: #1591da; }
   .contact:before {
-    width: 100%;
-    height: 100%;
     content: '';
-    background: inherit;
-    top: -50px;
-    transform-origin: bottom left;
-    transform: skewY(110px); }
+    background: #1591da;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1; }
   .contact .contact-info {
     text-align: center; }
     .contact .contact-info .contact-icons p {
