@@ -1,71 +1,89 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 * {
   box-sizing: border-box;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+}
 
 html {
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+}
 
 body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
   /* remove custom margin */
-  font-family: 'Roboto', cursive; }
+  font-family: "Roboto", cursive;
+}
 
 .container {
-  width: 100%; }
+  width: 100%;
+}
 
 main {
   max-width: 1350px;
-  margin: 0 auto; }
+  margin: 0 auto;
+}
 
 a {
   text-decoration: none;
   color: #1591da;
   transition: 0.5s;
-  font-size: 1.2em; }
-  a:hover {
-    color: #449DD1; }
+  font-size: 1.2em;
+}
+a:hover {
+  color: #449DD1;
+}
 
 p {
-  font-weight: 500; }
+  font-weight: 500;
+}
 
 img {
-  width: 100%; }
+  width: 100%;
+}
 
 #myTopNav {
-  float: left; }
+  float: left;
+}
 
 .logo {
   width: 60px;
   float: right;
-  padding: 9px; }
+  padding: 9px;
+}
 
 i {
   overflow: hidden;
   transition: 0.5s;
-  margin: 1em; }
-  i:hover {
-    opacity: 0.5; }
+  margin: 1em;
+}
+i:hover {
+  opacity: 0.5;
+}
 
 /* ########## Nav bar ########## */
 .top-nav {
   transition: 0.9s;
-  overflow: hidden; }
-  .top-nav a {
-    padding: 0 10px; }
+  overflow: hidden;
+}
+.top-nav a {
+  padding: 0 10px;
+}
 
 header {
   background: #000000;
-  padding: 10px; }
+  padding: 10px;
+}
 
 .top-nav a:hover {
-  background: #fff; }
+  background: #fff;
+}
 
 nav ul li {
   display: inline;
-  text-anchor: none; }
+  text-anchor: none;
+}
 
 button {
   text-align: center;
@@ -79,24 +97,29 @@ button {
   font-weight: 400;
   text-align: center;
   margin: 0 auto;
-  transition: 0.7s; }
-  button:hover {
-    background: #000000;
-    cursor: pointer; }
+  transition: 0.7s;
+}
+button:hover {
+  background: #000000;
+  cursor: pointer;
+}
 
 /* ########## Nav bar ########## */
 .top-nav {
   transition: 0.9s;
-  overflow: hidden; }
-  .top-nav a {
-    padding: 0 10px; }
-
+  overflow: hidden;
+}
+.top-nav a {
+  padding: 0 10px;
+}
 header {
   background: #000000;
-  padding: 10px; }
+  padding: 10px;
+}
 
 .top-nav a:hover {
-  background: #fff; }
+  background: #fff;
+}
 
 .top-nav .closebtn {
   /* the corner X button */
@@ -104,17 +127,20 @@ header {
   top: 0;
   right: 15px;
   font-size: 36px;
-  margin-left: 10px; }
+  margin-left: 10px;
+}
 
 nav ul li {
   display: inline;
-  text-anchor: none; }
+  text-anchor: none;
+}
 
 .sticky {
   position: fixed;
   top: 0;
   width: 100%;
-  transition: 0.5s; }
+  transition: 0.5s;
+}
 
 /* ############### Header file ############## */
 .backGround {
@@ -126,7 +152,8 @@ nav ul li {
   background-position: center;
   opacity: 0.9;
   background-blend-mode: multiply;
-  display: flex; }
+  display: flex;
+}
 
 .center-content {
   /* =============== center Content in middle ============== */
@@ -134,101 +161,129 @@ nav ul li {
   align-content: center;
   align-self: center;
   font-size: 2em;
-  color: #ccc; }
-  .center-content .blank {
-    display: inline-block; }
-  .center-content p {
-    animation: typing 10s steps(39) forwards, blink-caret 0.9s step-end infinite;
-    border-right: 4px solid white;
-    overflow: hidden;
-    white-space: nowrap; }
-  .center-content .arrow-container {
-    align-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column; }
-    .center-content .arrow-container .arrow {
-      overflow: hidden;
-      margin: -1px; }
-    .center-content .arrow-container span {
-      display: block;
-      align-content: center;
-      align-items: center;
-      width: 20px;
-      height: 20px;
-      border-bottom: 2px solid #fcfcfc;
-      border-right: 2px solid #72bae4;
-      transform: rotate(45deg);
-      margin: -1px;
-      animation: animate 4s;
-      animation-iteration-count: infinite; }
-      .center-content .arrow-container span:nth-child(1) {
-        animation-delay: -0.2s;
-        transform: rotate(45deg) translate(-20px); }
-      .center-content .arrow-container span:nth-child(2) {
-        animation-delay: .3s; }
+  color: #ccc;
+}
+.center-content .blank {
+  display: inline-block;
+}
+.center-content p {
+  animation: typing 10s steps(39) forwards, blink-caret 0.9s step-end infinite;
+  border-right: 4px solid white;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.center-content .arrow-container {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.center-content .arrow-container .arrow {
+  overflow: hidden;
+  margin: -1px;
+}
+.center-content .arrow-container span {
+  display: block;
+  align-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  border-bottom: 2px solid #fcfcfc;
+  border-right: 2px solid #72bae4;
+  transform: rotate(45deg);
+  margin: -1px;
+  animation: animate 4s;
+  animation-iteration-count: infinite;
+}
+.center-content .arrow-container span:nth-child(1) {
+  animation-delay: -0.2s;
+  transform: rotate(45deg) translate(-20px);
+}
+.center-content .arrow-container span:nth-child(2) {
+  animation-delay: 0.3s;
+}
 
 @keyframes blink-caret {
-  from,
-    to {
-    border-color: transparent; }
+  from, to {
+    border-color: transparent;
+  }
   50% {
-    border-color: white; } }
+    border-color: white;
+  }
+}
 @keyframes typing {
   0% {
-    width: 0%; }
+    width: 0%;
+  }
   30% {
-    width: 60%; }
+    width: 60%;
+  }
   80% {
-    width: 100%; } }
+    width: 100%;
+  }
+}
 @keyframes animate {
   0% {
     opacity: 0;
-    transform: rotate(45deg) translate(-20px, -20px); }
+    transform: rotate(45deg) translate(-20px, -20px);
+  }
   50% {
-    opacity: 1; }
+    opacity: 1;
+  }
   100% {
     opacity: 0;
-    transform: rotate(45deg) translate(15px, 15px); } }
+    transform: rotate(45deg) translate(15px, 15px);
+  }
+}
 /*  ########### About Section ############# */
 .about {
-  /* Want to add a background image or color */ }
+  /* Want to add a background image or color */
+}
 
 .heading {
   align-content: center;
   text-align: center;
-  padding-top: 3em; }
-  .heading:not(first-child) {
-    padding-top: 3em; }
-  .heading .head {
-    display: inline-flex;
-    align-content: center;
-    align-items: center; }
-  .heading hr {
-    width: 100px;
-    height: 1px;
-    border: 1px solid #000; }
-  .heading h2 {
-    text-align: center;
-    margin: 0;
-    font-size: 2em;
-    font-family: 'Courier New', Courier, monospace;
-    transition: 1s;
-    padding: 0.5em; }
-  .heading i {
-    display: block; }
+  padding-top: 3em;
+}
+.heading:not(first-child) {
+  padding-top: 3em;
+}
+.heading .head {
+  display: inline-flex;
+  align-content: center;
+  align-items: center;
+  margin: 0;
+}
+.heading hr {
+  width: 100px;
+  height: 1px;
+  border: 1px solid #000;
+}
+.heading h2 {
+  text-align: center;
+  margin: 0;
+  font-size: 2em;
+  font-family: "Courier New", Courier, monospace;
+  transition: 1s;
+  padding: 0.1em 0.5em;
+}
+.heading i {
+  display: block;
+}
 
 .aboutItem {
   text-align: center;
   align-items: center;
-  align-content: center; }
-  .aboutItem .intro {
-    font-size: 1.1em;
-    line-height: 1.9;
-    text-align: center;
-    padding: 0;
-    /* Intro about myself styles */
-    flex: 0.9; }
+  align-content: center;
+}
+.aboutItem .intro {
+  font-size: 1.1em;
+  line-height: 1.9;
+  text-align: center;
+  padding: 0;
+  /* Intro about myself styles */
+  flex: 0.9;
+}
 
 .intro-img img {
   width: 150px;
@@ -236,24 +291,31 @@ nav ul li {
   border-radius: 50%;
   display: block;
   transition: 1s;
-  /* Styling my image */ }
-  .intro-img img:hover {
-    opacity: 0.5; }
+  /* Styling my image */
+}
+.intro-img img:hover {
+  opacity: 0.5;
+}
 
 .skills {
-  padding: 2.5em; }
-  .skills .skill-icons {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); }
-    .skills .skill-icons .skill-item {
-      font-size: 3em;
-      border: 1px solid #eee;
-      text-align: center; }
-      .skills .skill-icons .skill-item:hover {
-        border: 1.2px solid #eee;
-        box-shadow: 2px; }
-      .skills .skill-icons .skill-item i:hover {
-        transform: scaleX(10deg); }
+  padding: 2.5em;
+}
+.skills .skill-icons {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+.skills .skill-icons .skill-item {
+  font-size: 3em;
+  border: 1px solid #eee;
+  text-align: center;
+}
+.skills .skill-icons .skill-item:hover {
+  border: 1.2px solid #eee;
+  box-shadow: 2px;
+}
+.skills .skill-icons .skill-item i:hover {
+  transform: scaleX(10deg);
+}
 
 /* ################ Education Section ############### */
 .education {
@@ -261,72 +323,91 @@ nav ul li {
   background: url("https://raw.githubusercontent.com/giordifungula/online-cv/master/images/bg-laptop.jpg");
   background-size: cover;
   background-attachment: fixed;
-  color: #eee; }
-  .education .edu-content .edu-item {
-    border: 1px solid black;
-    max-width: 700px; }
+  color: #eee;
+}
+.education .edu-content .edu-item {
+  border: 1px solid black;
+  max-width: 700px;
+}
 
 .work-content {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  padding: 1em; }
-  .work-content img {
-    width: 200px;
-    height: auto; }
+  padding: 1em;
+}
+.work-content img {
+  width: 200px;
+  height: auto;
+}
 
 .work-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin: 1.5em;
-  grid-gap: 10px; }
-  .work-grid img:hover {
-    opacity: 0.5;
-    cursor: pointer;
-    transition: 0.5s; }
+  grid-gap: 10px;
+}
+.work-grid img:hover {
+  opacity: 0.5;
+  cursor: pointer;
+  transition: 0.5s;
+}
 
 .contact {
   position: relative;
   width: 100%;
   height: 400px;
-  background: #1591da; }
-  .contact:before {
-    content: '';
-    background: #1591da;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 1; }
-  .contact .contact-info {
-    text-align: center; }
-    .contact .contact-info .contact-icons p {
-      margin: 0; }
-    .contact .contact-info .contact-icons a {
-      color: #000000; }
-
+  background: #1591da;
+}
+.contact:before {
+  content: "";
+  background: #1591da;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+.contact .contact-info {
+  text-align: center;
+}
+.contact .contact-info .contact-icons p {
+  margin: 0;
+}
+.contact .contact-info .contact-icons a {
+  color: #000000;
+}
 /* ##############  Media Queries ############# */
 /* ============ Mobile Only Resonsive view ================  */
 @media screen and (max-width: 680px) {
   .center-content {
-    font-size: 1.5em; }
-    .center-content p {
-      animation: none;
-      border: none; }
+    font-size: 1.5em;
+  }
+  .center-content p {
+    animation: none;
+    border: none;
+  }
 
   .logo {
-    display: none; }
+    display: none;
+  }
 
   header ul {
-    display: flex; }
+    display: flex;
+  }
 
   .aboutItem {
-    flex-direction: column; }
+    flex-direction: column;
+  }
 
   .work-grid {
-    grid-template-columns: auto; } }
+    grid-template-columns: auto;
+  }
+}
 @media (min-width: 601px) {
   input {
     display: block;
     margin: 0 auto;
-    width: 200px; } }
+    width: 200px;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */

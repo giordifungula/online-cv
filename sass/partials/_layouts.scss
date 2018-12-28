@@ -185,6 +185,7 @@ main {
         align-content: center;
         align-items: center;
         // center work between lines
+        margin: 0;
     }
     // == line ==
     hr {
@@ -199,7 +200,7 @@ main {
         font-size: 2em;
         font-family: 'Courier New', Courier, monospace;
         transition: 1s;
-        padding: 0.5em;
+        padding: 0.1em 0.5em ;
     }
     i {
         display: block;
