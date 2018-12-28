@@ -280,9 +280,8 @@ nav ul li {
   font-size: 1.1em;
   line-height: 1.9;
   text-align: center;
-  padding: 0;
+  padding: 0em 3em;
   /* Intro about myself styles */
-  flex: 0.9;
 }
 
 .intro-img img {
@@ -299,6 +298,7 @@ nav ul li {
 
 .skills {
   padding: 2.5em;
+  padding-top: 0;
 }
 .skills .skill-icons {
   display: grid;
@@ -331,7 +331,6 @@ nav ul li {
 }
 
 .work-content {
-  display: block;
   margin: 0 auto;
   max-width: 900px;
   padding: 1em;
@@ -340,7 +339,7 @@ nav ul li {
   border-bottom: 1px solid #000000;
 }
 .work-content img {
-  width: 200px;
+  max-width: 300px;
   height: auto;
 }
 
