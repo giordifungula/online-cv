@@ -194,6 +194,7 @@ main {
         border: 1px solid #000;
     }
     h2 {
+
         text-align: center;
         // color:#eee;    
         margin: 0;
@@ -201,6 +202,7 @@ main {
         font-family: 'Courier New', Courier, monospace;
         transition: 1s;
         padding: 0.1em 0.5em ;
+
     }
     i {
         display: block;
@@ -294,7 +296,7 @@ main {
 .education {
     // display: none;
     padding: 2em;
-    background: url('https://raw.githubusercontent.com/giordifungula/online-cv/master/images/bg-laptop.jpg');
+    background: url('https://raw.githubusercontent.com/giordifungula/online-cv/master/images/bg-laptop.jpg'), linear-gradient(to left, #000, coral);
     background-size: cover;
     background-attachment: fixed;
     color: #eee;
@@ -306,8 +308,14 @@ main {
         // display: flex;
 
         .edu-item {
-            border: 1px solid black;
+            border: 2px solid #1591da;
             max-width: 700px;
+            margin: 10px auto;
+            color:#eee;
+            font-size: 1.2em;
+            line-height: 1.4;
+            padding: 0.5em;
+            text-align: center;
         }
     }
 }
