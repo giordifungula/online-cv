@@ -259,12 +259,13 @@ nav ul li {
 /* ################ Education Section ############### */
 .education {
   padding: 2em;
-  background: url("https://raw.githubusercontent.com/giordifungula/online-cv/master/images/bg-laptop.jpg"), linear-gradient(to left, #000, coral);
+  background: url("https://raw.githubusercontent.com/giordifungula/online-cv/master/images/bg-laptop.jpg"), linear-gradient(to left, #000, #1c5eda);
   background-size: cover;
   background-attachment: fixed;
   color: #eee; }
   .education .edu-content .edu-item {
     border: 2px solid #1591da;
+    border-radius: 5px;
     max-width: 700px;
     margin: 10px auto;
     color: #eee;

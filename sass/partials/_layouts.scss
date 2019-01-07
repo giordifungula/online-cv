@@ -60,7 +60,7 @@ main {
     height: 90vh;
     text-align: center;
     // background: url('/images/BG_1.jpg');
-    background: url('https://raw.githubusercontent.com/giordifungula/online-cv/master/images/bg-laptop.jpg'),linear-gradient(to right, #1591da, #990f0f);
+    background: url('https://raw.githubusercontent.com/giordifungula/online-cv/master/images/bg-laptop.jpg'),linear-gradient(to right, #1591da, #000000);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -296,7 +296,7 @@ main {
 .education {
     // display: none;
     padding: 2em;
-    background: url('https://raw.githubusercontent.com/giordifungula/online-cv/master/images/bg-laptop.jpg'), linear-gradient(to left, #000, coral);
+    background: url('https://raw.githubusercontent.com/giordifungula/online-cv/master/images/bg-laptop.jpg'), linear-gradient(to left, #000, rgb(28, 94, 218));
     background-size: cover;
     background-attachment: fixed;
     color: #eee;
@@ -309,6 +309,7 @@ main {
 
         .edu-item {
             border: 2px solid #1591da;
+            border-radius: 5px;
             max-width: 700px;
             margin: 10px auto;
             color:#eee;
