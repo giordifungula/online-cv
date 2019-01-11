@@ -294,6 +294,8 @@ nav ul li {
     opacity: 0.5;
     cursor: pointer;
     transition: 0.5s; }
+  .work-grid .workItem h2, .work-grid .workItem p {
+    text-align: center; }
 
 .contact {
   position: relative;
@@ -327,7 +329,8 @@ nav ul li {
     display: none; }
 
   header ul {
-    display: flex; }
+    display: flex;
+    padding: 0; }
 
   .aboutItem {
     flex-direction: column; }

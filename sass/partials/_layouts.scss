@@ -59,7 +59,8 @@ main {
 .backGround {
     height: 90vh;
     text-align: center;
-    // background: #1591da
+    // background: #1591da;
+    background:url("https://raw.githubusercontent.com/giordifungula/online-cv/master/images/bg-laptop.jpg"), linear-gradient(to right, #1591da, #990f0f);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -356,6 +357,12 @@ main {
         opacity: 0.5;
         cursor: pointer;
         transition: 0.5s;
+    }
+    .workItem  {
+        h2, p {
+        text-align: center;
+
+        } 
     }
 }
 
