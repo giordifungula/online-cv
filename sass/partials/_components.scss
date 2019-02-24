@@ -1,10 +1,11 @@
-button{
+.cv{
     text-align: center;
-    display: block;
+    display: inline-block;
     margin: 12em;
     // width: 200px;
     padding: 20px;
     border: none;
+    border-radius: 1px;
     background: $light-blue;
     font-size: 20px;
     color: #ccc;
